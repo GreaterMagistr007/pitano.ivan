@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
+</head>
+
+<body>
+
+	<!-- HEADER START -->
+
+	<header class="header">
+		<div class="container">
+			<div class="header-row">
+				<div class="hamburger hamburger--vortex">
+					<div class="hamburger-box">
+						<div class="hamburger-inner"></div>
+					</div>
+				</div>
+				<div class="logo logo--header">
+					<img src="img/logo.svg" alt="alt">
+				</div>
+				<nav class="main-nav desktop">
+					<ul class="main-list">
+						<li><a href="#pinza">Пинза</a></li>
+						<li><a href="#salads">Салаты и закуски</a></li>
+						<li><a href="#soups">Супы</a></li>
+						<li><a href="#desserts">Десерты</a></li>
+						<li><a class="btn-modal" href="#delivery" data-effect="mfp-zoom-out">Доставка</a></li>
+					</ul>
+				</nav>
+				<div class="header-cart__wrap">
+					<div class="header-cart">
+						<img src="img/basket.svg" alt="alt">
+						<span class="header-cart__num">3</span>
+					</div>
+					<div class="cart">
+						<div class="cart-wrap">
+							<div class="cart-head">
+								<img src="img/basket.svg" alt="alt">
+								<span>3 товара в корзине</span>
+							</div>
+							<div class="cart-content">
+								<div class="cart-row">
+									<div class="cart-item">
+										<div class="cart-item__image">
+											<img src="img/cart-1.png" alt="alt">
+										</div>
+										<div class="cart-item__content">
+											<div class="cart-item__head">пинза Пепперони с руккулой</div>
+											<div class="cart-item__content-bottom">
+												<div class="cart-nav">
+													<div class="quantity">
+													  <input type="number" min="1" max="9" step="1" value="1">
+													</div>
+												</div>
+												<div class="cart-item__price">490₽</div>
+												<div class="cart-item__delete"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cart-row">
+									<div class="cart-item">
+										<div class="cart-item__image">
+											<img src="img/cart-2.png" alt="alt">
+										</div>
+										<div class="cart-item__content">
+											<div class="cart-item__head">кватро формаджио</div>
+											<div class="cart-item__content-bottom">
+												<div class="cart-nav">
+													<div class="quantity">
+													  <input type="number" min="1" max="9" step="1" value="1">
+													</div>
+												</div>
+												<div class="cart-item__price">460₽</div>
+												<div class="cart-item__delete"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cart-row">
+									<div class="cart-item">
+										<div class="cart-item__image">
+											<img src="img/cart-2.png" alt="alt">
+										</div>
+										<div class="cart-item__content">
+											<div class="cart-item__head">кватро формаджио</div>
+											<div class="cart-item__content-bottom">
+												<div class="cart-nav">
+													<div class="quantity">
+													  <input type="number" min="1" max="9" step="1" value="1">
+													</div>
+												</div>
+												<div class="cart-item__price">460₽</div>
+												<div class="cart-item__delete"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="cart-row">
+									<div class="cart-item">
+										<div class="cart-item__image">
+											<img src="img/cart-2.png" alt="alt">
+										</div>
+										<div class="cart-item__content">
+											<div class="cart-item__head">кватро формаджио</div>
+											<div class="cart-item__content-bottom">
+												<div class="cart-nav">
+													<div class="quantity">
+													  <input type="number" min="1" max="9" step="1" value="1">
+													</div>
+												</div>
+												<div class="cart-item__price">460₽</div>
+												<div class="cart-item__delete"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<form action="/" class="form form-small form-promo mb-15">
+								<div class="form-cart__row">
+									<input type="text" class="form-input" placeholder="Я знаю волшебное слово">
+									<button class="btn-promo">
+										<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M19.4594 7.8594C19.7503 7.38996 19.6056 6.77355 19.1362 6.48261L18.4116 6.03352C17.9422 5.74257 17.3257 5.88727 17.0348 6.3567L10.115 17.5217L3.06064 11.9442C2.6274 11.6017 1.99852 11.6752 1.65599 12.1084L1.12728 12.7771C0.784744 13.2104 0.858269 13.8392 1.2915 14.1818L9.28743 20.5037C9.32124 20.5314 9.35725 20.5572 9.39542 20.5809L10.12 21.03C10.5894 21.3209 11.2059 21.1762 11.4968 20.7068L19.4594 7.8594Z" fill="#F15A29"/>
+											</svg>
+									</button>
+								</div>
+							</form>
+							<form action="/" class="form form-cart">
+								<div class="form-cart__content">
+									<div class="form-cart__content-row">
+										<span>Всего товаров:</span>
+										<span class="bold">3</span>
+									</div>
+									<div class="form-cart__content-row">
+										<span>На сумму:</span>
+										<span class="bold">1410 ₽</span>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="btn btn--orange btn--order">Заказать</div>
+								</div>
+								<div class="form__checkbox">
+									<input type="checkbox" required checked id="policyCart">
+									<label for="policyCart">Я согласен на обработку персональных данных</label>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="header-contacts">
+					<div class="header-contacts__address">ТРК Сильвер Молл, Сергеева 3</div>
+					<a href="tel:+73952000000" class="header-contacts__phone linked">+7 (3952)00-00-00</a>
+				</div>
+			</div>
+		</div>
+		<form action="/" class="order form form-small">
+			<div class="order-scroll">
+				<div class="order-toggler">Корзина</div>
+				<div class="order-cart order-hidden">
+					<div class="order-cart__row">
+						<div class="cart-item__image">
+							<img src="img/cart-1.png" alt="alt">
+						</div>
+						<div class="cart-item__head">пинза Пепперони с руккулой</div>
+						<div class="cart-nav">
+							<div class="quantity">
+							  <input type="number" min="1" max="9" step="1" value="1">
+							</div>
+						</div>
+						<div class="cart-item__price">490₽</div>
+						<div class="cart-item__delete"></div>
+					</div>
+					<div class="order-cart__row">
+						<div class="cart-item__image">
+							<img src="img/cart-2.png" alt="alt">
+						</div>
+						<div class="cart-item__head">кватро формаджио</div>
+						<div class="cart-nav">
+							<div class="quantity">
+							  <input type="number" min="1" max="9" step="1" value="1">
+							</div>
+						</div>
+						<div class="cart-item__price">490₽</div>
+						<div class="cart-item__delete"></div>
+					</div>
+				</div>
+				<div class="order-row mb-25">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="order-count">3 товара на сумму 1410 ₽</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="form-cart__row form form-small form-promo">
+								<input type="text" class="form-input" placeholder="Я знаю волшебное слово">
+								<button class="btn-promo">
+									<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M19.4594 7.8594C19.7503 7.38996 19.6056 6.77355 19.1362 6.48261L18.4116 6.03352C17.9422 5.74257 17.3257 5.88727 17.0348 6.3567L10.115 17.5217L3.06064 11.9442C2.6274 11.6017 1.99852 11.6752 1.65599 12.1084L1.12728 12.7771C0.784744 13.2104 0.858269 13.8392 1.2915 14.1818L9.28743 20.5037C9.32124 20.5314 9.35725 20.5572 9.39542 20.5809L10.12 21.03C10.5894 21.3209 11.2059 21.1762 11.4968 20.7068L19.4594 7.8594Z" fill="#F15A29"/>
+										</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="order-head">Контактная информация:</div>
+				<div class="order-row">
+					<div class="row">
+						<div class="col-sm-6 mb-15">
+							<label for="order-name" class="form-small__label">Имя*</label>
+							<input type="text" id="order-name" class="error">
+							<div class="error">Неправильное имя</div>
+						</div>
+						<div class="col-sm-6 mb-15">
+							<label for="order-phone" class="form-small__label">Телефон*</label>
+							<input type="text" id="order-phone" class="form__phone">
+						</div>
+						<div class="col-sm-6 mb-15">
+							<label for="order-street" class="form-small__label">Улица, номер дома*</label>
+							<input type="text" id="order-street">
+						</div>
+						<div class="col-sm-6 mb-15">
+							<label for="order-flat" class="form-small__label">Квартира / офис</label>
+							<input type="text" id="order-flat">
+						</div>
+					</div>
+				</div>
+				<div class="order-toggler">Указать на карте</div>
+				<div class="order-hidden order-map mb-15">
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ade1b9e280248ca00930d2d7e90027b518cab849d7627c390f38a2f10f2a9d485&amp;width=490&amp;height=140&amp;lang=ru_RU&amp;scroll=true"></script>
+				</div>
+				<div class="order-row mb-15">
+					<label for="order-comment" class="form-small__label">Комментарий курьеру</label>
+					<input type="text" id="order-comment">
+				</div>
+				<div class="payment">
+					<div class="order-head">Оплата:</div>
+					<div class="payment-row mb-25">
+						<div class="payment-choose">
+							<input type="radio" id="money" checked name="payment">
+							<label for="money">Курьеру наличными</label>
+						</div>
+						<div class="payment-choose">
+							<input type="radio" id="card" name="payment">
+							<label for="card">Курьеру картой</label>
+						</div>
+					</div>
+					<div class="form-row tl-center">
+						<button class="btn btn--bg">Отправить</button>
+					</div>
+					<div class="form__checkbox">
+						<input type="checkbox" required checked id="policyOrder">
+						<label for="policyOrder">Я согласен на обработку персональных данных</label>
+					</div>
+				</div>
+			</div>
+		</form>
+
+	</header>
+
+
+	<nav class="main-nav mobile">
+		<ul class="main-list">
+			<li><a href="#pinza">Пинза</a></li>
+			<li><a href="#salads">Салаты</a></li>
+			<li><a href="#soups">Супы</a></li>
+			<li><a href="#desserts">Десерты</a></li>
+			<li><a class="btn-modal" href="#delivery" data-effect="mfp-zoom-out">Доставка</a></li>
+		</ul>
+		<div class="mobile-menu">
+			<div class="mobile-menu__top">
+				<div class="header-contacts">
+					<a href="tel:+73952000000" class="header-contacts__phone linked">+7 (3952)00-00-00</a>
+					<div class="header-contacts__address">ТРК Сильвер Молл, Сергеева 3</div>
+				</div>
+			</div>
+			<div class="mobile-menu__bottom">
+				<div class="footer-info__head">Будьте с нами =)</div>
+				<a href="#" class="social" target="_blank">
+					<img src="img/instagram-black.svg" alt="alt">
+					<span>pinsa.pitano</span>
+				</a>
+			</div>
+		</div>
+	</nav>
+
+	<!-- HEADER END -->
+
+	<!-- MAIN CONTENT START -->
+
+	<main class="main">
+		<section class="main-slider">
+			<section class="main-screen">
+				<img src="img/tomat.png" alt="alt" class="main-screen__image">
+				<div class="container">
+					<div class="main-screen-content">
+						<h1 class="h1">
+							<img src="img/h1.png" alt="alt">
+						</h1>
+						<p class="main-screen__subhead">Настоящая итяльянткая Пинза<br> в Иркутске</p>
+					</div>
+				</div>
+			</section>
+			<section class="main-screen">
+				<img src="img/tomat.png" alt="alt" class="main-screen__image">
+				<div class="container">
+					<div class="main-screen-content">
+						<h1 class="h1">
+							<img src="img/h1.png" alt="alt">
+						</h1>
+						<p class="main-screen__subhead">Настоящая итяльянткая Пинза<br> в Иркутске</p>
+					</div>
+				</div>
+			</section>
+		</section>
+		<section class="about">
+			<div class="about-top">
+				<div class="container">
+					<div class="logo">
+						<img src="img/logo.svg" alt="alt">
+					</div>
+				</div>
+			</div>
+			<div class="about-content">
+				<img src="img/green-pizza.png" alt="alt" class="about-content__image">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<p>Идеальная пинза — сытная, но легкая пища.</p>
+							<p>Основа у неё тонкая, а начинка — обильная и деликатесная. Никаких дрожжей в тесте. Только традиционная домашняя закваска.</p>
+							<p>Тесто для пиццы готовится исключительно из итальянской муки. Все детали важны! Только лучшие продукты и кулинарные секреты дают максимально вкусный результат =)</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="main-content">
+			<section class="cards" id="pinza">
+				<div class="container">
+					<div class="head">
+						<h2 class="h2 white">ПИНЗА</h2>
+					</div>
+					<div class="card-main">
+						<div class="card-main__row">
+							<div class="card-main__item card-main__item--top">
+								<div class="card-main__item-content">
+									<div class="card__content-header">
+										<div class="card__content-head">МАРГАРИТА</div>
+										<div class="card__content-price">350 ₽</div>
+									</div>
+									<p>Томаты потертые, моцарелла, орегано, оливковое масло, базилик.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+								<div class="card-main__item-image">
+									<img src="img/pizza-1.png" alt="alt" class="desktop">
+									<img src="img/pizza-mobile-1.png" alt="alt" class="mobile">
+								</div>
+							</div>
+						</div>
+						<div class="card-main__row">
+							<div class="card-main__item card-main__item--left">
+								<div class="card-main__item-content">
+									<div class="card__content-header">
+										<div class="card__content-head">Ветчина с грибами</div>
+										<div class="card__content-price">550 ₽</div>
+									</div>
+									<p>Томаты потертые, ветчина, белые грибы, артишок, моцарелла.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+								<div class="card-main__item-image image-300">
+									<img src="img/pizza-2.png" alt="alt">
+								</div>
+							</div>
+							<div class="card-main__item card-main__item--right">
+								<div class="card-main__item-image">
+									<img src="img/pizza-3.png" alt="alt">
+								</div>
+								<div class="card-main__item-content">
+									<div class="card__content-header">
+										<div class="card__content-price">490 ₽</div>
+										<div class="card__content-head">Пепперони с руккулой</div>
+									</div>
+									<p>Томаты потертые, острая салями, моцарелла, руккола, оливки.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="card-main__row">
+							<div class="card-main__item card-main__item--left">
+								<div class="card-main__item-content">
+									<div class="card__content-header">
+										<div class="card__content-head">ВЕГЕТаРИАНСКАЯ</div>
+										<div class="card__content-price">480 ₽</div>
+									</div>
+									<p>Томаты потертые, печаные овощи, лесные грибы, моцарелла, артишок, оливки каламата.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+								<div class="card-main__item-image">
+									<img src="img/pizza-4.png" alt="alt">
+								</div>
+							</div>
+							<div class="card-main__item card-main__item--right">
+								<div class="card-main__item-image">
+									<img src="img/pizza-5.png" alt="alt">
+								</div>
+								<div class="card-main__item-content">
+									<div class="card__content-header">
+										<div class="card__content-price">460 ₽</div>
+										<div class="card__content-head">кватро формаджио</div>
+									</div>
+									<p>Соус сливочный, моцарелла, пармезан, сулугуни, горгонзола.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="card-main__row">
+							<div class="card-main__item card-main__item--left">
+								<div class="card-main__item-content">
+									<div class="card__content-header">
+										<div class="card__content-head">тунец с беконом и красным луком</div>
+										<div class="card__content-price">580 ₽</div>
+									</div>
+									<p>Томаты потертые, тунец, бекон, моцарелла, артишок, каперсы, маслины каламата, красный лук.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+								<div class="card-main__item-image">
+									<img src="img/pizza-6.png" alt="alt">
+								</div>
+							</div>
+							<div class="card-main__item card-main__item--right">
+								<div class="card-main__item-image">
+									<img src="img/pizza-7.png" alt="alt">
+								</div>
+								<div class="card-main__item-content">
+									<div class="card__content-header">
+										<div class="card__content-price">560 ₽</div>
+										<div class="card__content-head">с пармским окороком</div>
+									</div>
+									<p>Томаты потертые, пармский окорок, черри, моцарелла, руккола.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="card-main__row">
+							<div class="card-main__item card-main__item--left">
+								<div class="card-main__item-content">
+									<div class="card__content-header">
+										<div class="card__content-head">груша фламбе с горгонзолой</div>
+										<div class="card__content-price">600 ₽</div>
+									</div>
+									<p>Груша фламбированная, горгонзола, соус маскарпоне, орех кедровый, мята.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+								<div class="card-main__item-image">
+									<img src="img/pizza-8.png" alt="alt">
+								</div>
+							</div>
+							<div class="card-main__item card-main__item--right">
+								<div class="card-main__item-image">
+									<img src="img/pizza-9.png" alt="alt">
+								</div>
+								<div class="card-main__item-content">
+									<div class="card__content-header">
+										<div class="card__content-price">700 ₽</div>
+										<div class="card__content-head">семга с креветками</div>
+									</div>
+									<p>Соус сливочный, семга с/с, томаты черри, моцарелла, цедра лимона, крем-сыр.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="card-main__row">
+							<div class="card-main__item card-main__item--left">
+								<div class="card-main__item-content">
+									<div class="card__content-header">
+										<div class="card__content-head">с анчоусом и сыром страчателла</div>
+										<div class="card__content-price">600 ₽</div>
+									</div>
+									<p>Соус сливочно – томатный, анчоусы, томаты вяленые, руккола, страчателла, бальзамический крем.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+								<div class="card-main__item-image">
+									<img src="img/pizza-10.png" alt="alt">
+								</div>
+							</div>
+							<div class="card-main__item card-main__item--right">
+								<div class="card-main__item-image">
+									<img src="img/pizza-11.png" alt="alt">
+								</div>
+								<div class="card-main__item-content">
+									<div class="card__content-header">
+										<div class="card__content-price">550 ₽</div>
+										<div class="card__content-head">пармеджано</div>
+									</div>
+									<p>Томаты потертые, баклажан запеченый, пармезан, томаты, соус песто, моцарелла, базилик.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="card-main__row">
+							<div class="card-main__item card-main__item--left">
+								<div class="card-main__item-content">
+									<div class="card__content-header">
+										<div class="card__content-head">мясная</div>
+										<div class="card__content-price">560 ₽</div>
+									</div>
+									<p>Томаты потертые, моцарелла, орегано, оливковое масло, базилик.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+								<div class="card-main__item-image">
+									<img src="img/pizza-12.png" alt="alt" class="desktop">
+									<img src="img/pizza-mobile-2.png" alt="alt" class="mobile">
+								</div>
+							</div>
+							<div class="card-main__item card-main__item--right">
+								<div class="card-main__item-image">
+									<img src="img/pizza-13.png" alt="alt" class="desktop">
+									<img src="img/pizza-mobile-3.png" alt="alt" class="mobile">
+								</div>
+								<div class="card-main__item-content">
+									<div class="card__content-header">
+										<div class="card__content-price">550 ₽</div>
+										<div class="card__content-head">индейка с яблоком</div>
+									</div>
+									<p>Соус маскарпоне, рулет из индейки, базелик,   яблоко карамелизированное с корицей, пармезан.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="cards" id="salads">
+				<div class="container">
+					<div class="head">
+						<h2 class="h2 white h2--long h2--small">САЛАТЫ И ЗАКУСКИ</h2>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-sm-6">
+							<div class="card">
+								<div class="card__image">
+									<img src="img/salad-1.jpg" alt="alt">
+								</div>
+								<div class="card__content">
+									<div class="card__content-header">
+										<div class="card__content-head">САЛАТ СО свеклой</div>
+										<div class="card__content-price">265 ₽</div>
+									</div>
+									<p>Салат с печеной свеклой, рукколой, грецким орехом и сыром Горгонзолла.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="card">
+								<div class="card__image">
+									<img src="img/salad-2.jpg" alt="alt">
+								</div>
+								<div class="card__content">
+									<div class="card__content-header">
+										<div class="card__content-head">ПАНЦАРЕЛЛА</div>
+										<div class="card__content-price">255 ₽</div>
+									</div>
+									<p>Классический итальянский овощной салат с ломтиками фокаччи.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="card">
+								<div class="card__image">
+									<img src="img/salad-3.jpg" alt="alt">
+								</div>
+								<div class="card__content">
+									<div class="card__content-header">
+										<div class="card__content-head">ДВА ТОМАТА</div>
+										<div class="card__content-price">410 ₽</div>
+									</div>
+									<p>Моцарелла и два помидора с соусом Песто.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="card">
+								<div class="card__image">
+									<img src="img/salad-4.jpg" alt="alt">
+								</div>
+								<div class="card__content">
+									<div class="card__content-header">
+										<div class="card__content-head">Салат с ростбифом</div>
+										<div class="card__content-price">410 ₽</div>
+									</div>
+									<p>Салат с ростбифом су-вид и малиновой заправкой.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="cards" id="soups">
+				<div class="container">
+					<div class="head">
+						<h2 class="h2 white">СУПЫ</h2>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-sm-6">
+							<div class="card">
+								<div class="card__image">
+									<img src="img/soup-1.jpg" alt="alt">
+								</div>
+								<div class="card__content">
+									<div class="card__content-header">
+										<div class="card__content-head">ТОМАТНЫЙ С МОЦАРЕЛЛОЙ</div>
+										<div class="card__content-price">180 ₽</div>
+									</div>
+									<p>Пряный томатный суп с кусочками Моцареллы.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="card">
+								<div class="card__image">
+									<img src="img/soup-2.jpg" alt="alt">
+								</div>
+								<div class="card__content">
+									<div class="card__content-header">
+										<div class="card__content-head">КРУМ СУП ИЗ БЕЛЫХ ГРИБОВ</div>
+										<div class="card__content-price">255 ₽</div>
+									</div>
+									<p>Суп крем из белых грибов и трюфельным маслом.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="card">
+								<div class="card__image">
+									<img src="img/soup-3.jpg" alt="alt">
+								</div>
+								<div class="card__content">
+									<div class="card__content-header">
+										<div class="card__content-head">ТОМАТНЫЙ С МОРЕПРОДУКТАМИ</div>
+										<div class="card__content-price">310 ₽</div>
+									</div>
+									<p>Моцарелла и два помидора с соусом Песто.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-sm-6">
+							<div class="card">
+								<div class="card__image">
+									<img src="img/soup-4.jpg" alt="alt">
+								</div>
+								<div class="card__content">
+									<div class="card__content-header">
+										<div class="card__content-head">ТОМАТНЫЙ С МОРЕПРОДУКТАМИ</div>
+										<div class="card__content-price">240 ₽</div>
+									</div>
+									<p>Пряный томатный суп с кусочками Моцареллы.</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="cards" id="desserts">
+				<div class="container">
+					<div class="head">
+						<h2 class="h2 white">ДЕСЕРТЫ</h2>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 col-md-4">
+							<div class="card card--big">
+								<div class="card__image">
+									<img src="img/desserts-1.jpg" alt="alt">
+								</div>
+								<div class="card__content">
+									<div class="card__content-header">
+										<div class="card__content-head">Панцанелла</div>
+										<div class="card__content-price">235 ₽</div>
+									</div>
+									<p>Классический итальянский овощной салат с ломтиками Форкаччи. Листья салата, яйцо, Форкачча, томаты,</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 card--big">
+							<div class="card">
+								<div class="card__image">
+									<img src="img/desserts-2.jpg" alt="alt">
+								</div>
+								<div class="card__content">
+									<div class="card__content-header">
+										<div class="card__content-head">Панцфнелла</div>
+										<div class="card__content-price">235 ₽</div>
+									</div>
+									<p>Классический итальянский овощной салат с ломтиками Форкаччи. Листья салата, яйцо, Форкачча, томаты,</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6 col-md-4 card--big">
+							<div class="card">
+								<div class="card__image">
+									<img src="img/desserts-3.jpg" alt="alt">
+								</div>
+								<div class="card__content">
+									<div class="card__content-header">
+										<div class="card__content-head">НАПАКОТА</div>
+										<div class="card__content-price">235 ₽</div>
+									</div>
+									<p>Классический итальянский овощной салат с ломтиками Форкаччи. Листья салата, яйцо, Форкачча, томаты,</p>
+									<a href="#" class="btn btn--orange">В корзину</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+		<section class="contacts">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="contacts-content tl-center">
+							<h2 class="h2 h2--small">Подарки за подписку</h2>
+							<p>Подпишитесь на нашу рассылку и получайте <br> приятные подарки.</p>
+							<form action="/" class="form form-contacts">
+								<div class="form-row">
+									<input type="text" class="form-input" placeholder="Михаил">
+								</div>
+								<div class="form-row">
+									<input type="text" class="form-input form__phone" placeholder="+7(924)000-00-00">
+								</div>
+								<div class="form-row">
+									<button class="btn btn--bg">Отправить</button>
+								</div>
+								<div class="form-row">
+									<div class="form__checkbox">
+										<input type="checkbox" required checked id="policy">
+										<label for="policy">Я согласен с условиями <a href="#">договора оферты</a></label>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ade1b9e280248ca00930d2d7e90027b518cab849d7627c390f38a2f10f2a9d485&amp;width=1145&amp;height=720&amp;lang=ru_RU&amp;scroll=true"></script>
+		</section>
+	</main>
+
+	<!-- MAIN CONTENT  END -->
+
+	<!-- FOOTER START -->
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row justify-content-between">
+				<div class="col-md-2 order-2 order-md-1">
+					<ul class="footer__list footer__list-mobile">
+						<li>
+							<a href="#">Пинза</a>
+						</li>
+						<li>
+							<a href="#">Салаты</a>
+						</li>
+						<li>
+							<a href="#">Супы</a>
+						</li>
+						<li>
+							<a href="#">Десерты</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 order-3 order-md-2">
+					<ul class="footer__list">
+						<li>
+							<a href="#">Договор оферты</a>
+						</li>
+						<li>
+							<a href="#">Пользовательское соглашение</a>
+						</li>
+						<li>
+							<a href="#">+7(3952) 00-00-00</a>
+						</li>
+						<li>
+							<a href="#">ООО “ТРИА ПЛЮС”</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 order-1 order-md-3">
+					<div class="logo logo--footer">
+						<img src="img/logo-footer.svg" alt="alt">
+					</div>
+				</div>
+				<div class="col-md-4 order-4 order-md-4">
+					<div class="footer-info">
+						<div class="footer-info__head">Будьте с нами =)</div>
+						<div class="footer-info__count">
+							<span class="footer-info__count-text">Доставлено заказов:</span>
+							<span class="footer-info__count-num">8752614134 </span>
+						</div>
+						<a href="#" class="social" target="_blank">
+							<img src="img/instagram.svg" alt="alt">
+							<span>pinsa.pitano</span>
+						</a>
+						<div class="developer">
+							<img src="img/ai.svg" alt="alt">
+							<span>2019</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- FOOTER END -->
+
+	<!-- MODAL -->
+
+	<div class="modal mfp-hide mfp-with-anim" id="delivery" data-effect="mfp-zoom-out">
+		<div class="modal-content">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="modal-content__wrap">
+						<h2 class="h2">Доставка <br> 60 минут</h2>
+						<p>Мы готовы доставить ваш заказ по Октябрьскому району г.Иркутска.</p>
+						<p>Зоны доставки постоянно расширяются, если ваш адрес не попадает в зону доставки – звоните, мы что нибудь придумаем =)</p>
+						<a href="tel:+73952000000" class="modal-phone">+7 (3952)00-00-00</a>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="modal-content__map">
+						<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ade1b9e280248ca00930d2d7e90027b518cab849d7627c390f38a2f10f2a9d485&amp;width=540&amp;height=540&amp;lang=ru_RU&amp;scroll=true"></script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+	<script src="js/common.js"></script>
+
+
+
+</body>
+</html>

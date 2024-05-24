@@ -1,0 +1,357 @@
+@import "vars"
+@import "_mixins/mixins.sass"
+@import "fonts"
+@import "libs"
+@import "normalize"
+
+@import "parts/header.sass"
+@import "parts/footer.sass"
+
+@import "components/forms"
+@import "components/buttons"
+@import "components/component"
+@import "components/modal"
+
+
+@import "components/sizing.sass"
+@import "components/typography.sass"
+
+.mobile
+	display: none
+
+.main 
+	margin-top: 59px
+	&-slider 
+		margin-bottom: -80px
+	&-content 
+		padding: 120px 0
+		overflow: hidden
+	&-screen 
+		background: url('../img/main-banner.jpg') no-repeat center 
+		background-size: cover
+		position: relative
+		z-index: 1
+		padding: 300px 0 200px
+		&__subhead 
+			color: #ffffff
+			font-size: 36px
+			font-weight: 700
+			margin: 0
+		&__image 
+			position: absolute
+			right: 40px
+			bottom: -80px
+		&::before 
+			@extend %before 
+			width: 100%
+			height: 100%
+			background-image: linear-gradient(to bottom, rgba(6, 6, 6, 0.29) 0%, rgba(0, 0, 0, 0) 79%)
+			left: 0
+			top: 0
+			z-index: -1
+
+.about 
+	&-content 
+		padding: 40px 0 25px
+		background: #139149 url('../img/green-bg.png') no-repeat left center
+		position: relative
+		&__image 
+			position: absolute
+			top: -190px
+			right: 0
+		p 
+			margin-top: 0
+			margin-bottom: 15px
+			color: #fff 
+			font-size: 18px
+	&-top 
+		padding: 150px 0 50px
+		.logo 
+			img 
+				display: block
+				width: 260px
+.cards
+	margin-bottom: 140px
+	&:last-child
+		margin-bottom: 0
+
+.card 
+	display: flex
+	flex-direction: column
+	height: 100%
+	&-main 
+		&__item
+			display: flex
+			align-items: center
+			width: 50%
+			&--right 
+				text-align: right
+				.card-main__item-content
+					padding-right: 0
+					padding-left: 20px
+			&--top 
+				width: auto
+			&-content 
+				max-width: 300px
+				padding-right: 20px
+				p 
+					font-family: $sansCondensed
+					font-weight: 300
+					margin: 12px 0
+		&__row
+			display: flex
+	&__content 
+		flex-grow: 1
+		display: flex
+		flex-direction: column
+		align-items: flex-start
+		.btn 
+			margin-top: auto
+		&-header 
+			display: flex
+			justify-content: space-between
+			align-items: center
+			width: 100%
+		&-head 
+			text-transform: uppercase
+			font-weight: 600
+			font-size: 16px
+		p 
+			font-family: $sansCondensed
+			font-weight: 300
+			margin: 12px 0 18px
+		&-price 
+			color: #fff
+			font-size: 18px
+			font-weight: 700
+			font-family: $sansCondensed
+			background: url('../img/price-bg.svg') no-repeat center center
+			background-size: contain
+			padding: 5px
+			flex-shrink: 0
+	&__image 
+		margin-bottom: 10px
+		img 
+			display: block
+			width: 100%
+
+.contacts 
+	background-color: #F9F9F9
+	padding: 100px 0 30px
+	position: relative
+	>
+		ymaps
+			position: absolute
+			right: 0
+			top: 25px
+			width: 50% !important
+			height: calc(100% - 50px) !important
+	.h2 
+		margin-bottom: 50px
+	p 
+		margin: 0
+		font-size: 18px
+		margin-bottom: 45px
+
+.quantity
+	position: relative
+	input 
+		color: #000000
+		font-size: 16px
+		font-weight: 600
+		text-transform: uppercase
+		text-align: center 
+		width: 28px
+		height: 28px
+		line-height: 28px
+		border: 1px solid #f15a29
+		border-radius: 50%
+		margin: 0 27px
+	&-button
+		width: 18px
+		height: 18px
+		border-radius: 50%
+		position: absolute
+		top: 50%
+		cursor: pointer
+		transform: translateY(-50%)
+	&-up 
+		background: url('../img/plus.svg') no-repeat center center 
+		right: 0
+	&-down 
+		background: url('../img/minus.svg') no-repeat center center 
+		left: 0
+
+.cart 
+	position: absolute
+	background-color: #fff
+	border: 1px solid #BFBFBF
+	border-radius: 2px
+	width: 280px
+	padding: 15px 11px
+	transition: transform .5s ease 
+	transform: translateY(-150%)
+	top: 60px
+	left: -100px
+	&-content 
+		height: 200px
+	&.open 
+		transform: translateY(0)
+		z-index: 1000
+	&-row 
+		border-bottom: 1px solid #c4c4c4
+		padding-bottom: 15px
+		margin-bottom: 15px
+	&-item 
+		display: flex
+		&__delete 
+			width: 20px
+			height: 20px
+			background: url('../img/delete.svg') no-repeat center center 
+			cursor: pointer
+			margin-left: 10px
+		&__content 
+			flex-grow: 1
+			&-bottom 
+				display: flex
+				align-items: center
+				justify-content: space-between
+		&__image 
+			flex-shrink: 0
+			margin-right: 10px
+			img 
+				display: block
+				width: 50px
+				height: 38px
+		&__head 
+			font-size: 14px
+			text-transform: uppercase
+			margin-bottom: 12px
+		&__price 
+			font-size: 18px
+			margin-left: auto
+	&-head 
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-bottom: 12px
+		padding-bottom: 12px
+		border-bottom: 1px solid #C4C4C4
+		span 
+			font-size: 18px
+
+.mCSB_inside>.mCSB_container
+	margin-right: 0
+
+.mCSB_scrollTools 
+	visibility: hidden
+
+.order 
+	position: absolute
+	top: 70px
+	right: 15px
+	width: 522px
+	padding: 25px 15px
+	border-radius: 3px
+	border: 1px solid #bfbfbf
+	background-color: #ffffff
+	transform: translateX(100vw)
+	@include trans 
+	&.open 
+		transform: translateX(0)
+		z-index: 1000
+	&-hidden 
+		display: none
+	&-map 
+		> 
+			ymaps 
+				width: 100% !important
+		img 
+			display: block
+			width: 100%
+	&-scroll 
+		height: 80vh
+	&-head 
+		font-size: 16px
+		font-weight: 600
+		margin-bottom: 10px
+	&-count 
+		text-align: center
+		font-weight: 700
+		border-radius: 2px
+		border: 1px solid #ababab
+		background-color: #ffffff
+		padding: 3px 10px
+	&-cart 
+		&__row 
+			display: flex
+			align-items: center
+			margin-bottom: 20px
+			.cart
+				&-nav 
+					margin-left: auto
+				&-item 
+					&__price 
+						margin-left: 46px
+					&__head 
+						font-size: 14px
+						font-weight: 600
+						text-transform: uppercase
+						max-width: 195px
+						padding: 0 10px
+						margin-bottom: 0
+	&-toggler 
+		color: $orange 
+		position: relative
+		font-size: 13px
+		font-weight: 700
+		margin-bottom: 18px
+		display: inline-block
+		cursor: pointer
+		&::before
+			@extend %before 
+			top: 6px
+			right: -20px
+			width: 10px
+			height: 6px
+			background: url('../img/toggler.svg') no-repeat center center 
+
+.payment 
+	&-row
+		display: flex
+	&-choose 
+		width: 50%
+		input 
+			display: none
+			+ 
+				label 
+					border: 1px solid #ababab
+					background-color: #ffffff
+					text-align: center
+					padding: 4px 15px
+					font-weight: 600
+					display: block
+					cursor: pointer
+			&:checked 
+				+ 
+					label 
+						background-color: $orange 
+						color: #fff
+						border: none 
+						padding: 5px 15px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "media" // Always at the end

@@ -1,0 +1,1235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2024-04-23 00:29">
+<shop>
+<name>Pizza Pitano</name>
+<company>ООО «ТРИА ПЛЮС»</company>
+<url>https://pitano.ru/</url>
+<currencies>
+<currency id="RUR" rate="1"/>
+</currencies>
+<categories>
+<category id="1">Наборы</category>
+<category id="2">Неаполитанская пицца</category>
+<category id="3">Римская пицца</category>
+<category id="4">Салаты</category>
+<category id="5">Супы</category>
+<category id="6">Паста</category>
+<category id="7">Горячее</category>
+<category id="8">Десерты</category>
+</categories>
+<offers>
+<offer id="112">
+<name>Мясная тарелка</name>
+<url>https://delivery.pitano.ru/?product=set12#Sets</url>
+<price>3750</price>
+<currencyId>RUR</currencyId>
+<categoryId>1</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/7ffdb7f8eef657129b27004851d22b9e.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Цыплёнок на гриле, куриная грудка, медальоны из говядины, стейк Питано, запечённый картофель. Соусы грибной, перечный, томатный.]]></description>
+</offer>
+<offer id="113">
+<name>Рыбная тарелка</name>
+<url>https://delivery.pitano.ru/?product=set13#Sets</url>
+<price>3950</price>
+<currencyId>RUR</currencyId>
+<categoryId>1</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/ca2c11078ff0895b288e11b2ec20c085.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Филе сёмги, филе дорадо, филе кальмара, тигровые креветки, овощи гриль.]]></description>
+</offer>
+<offer id="114">
+<name>Мясной сет</name>
+<url>https://delivery.pitano.ru/?product=set14#Sets</url>
+<price>7150</price>
+<currencyId>RUR</currencyId>
+<categoryId>1</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/a495180a8309fdb9fec081ed78d42cce.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Мясная тарелка. Рулеты ассорти, 10шт. Капрезе, 2 порции. Салат с куриным филе на гриле и печёными овощами, 2 порции. Фокача, 2 вида.]]></description>
+</offer>
+<offer id="115">
+<name>Рыбный сет</name>
+<url>https://delivery.pitano.ru/?product=set15#Sets</url>
+<price>7350</price>
+<currencyId>RUR</currencyId>
+<categoryId>1</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/3421366891aed8fde7dc954f2e51cd5d.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Рыбная тарелка. Рулеты ассорти, 10шт. Капрезе, 2 порции. Салат с куриным филе на гриле и печёными овощами, 2 порции. Фокача, 2 вида.]]></description>
+</offer>
+<offer id="116">
+<name>Сет на большую компанию</name>
+<url>https://delivery.pitano.ru/?product=set16#Sets</url>
+<price>8550</price>
+<currencyId>RUR</currencyId>
+<categoryId>1</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/900c2bcb2a4fe2fc5af7b1900dc1758a.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Тарелка мясная или рыбная (на выбор). Салат с тунцом и авокадо, 2 порции. Салат с печёной свеклой, 2 порции. Рулеты, 2 порции. Ростбиф су-вид закуска, 2 порции. Фокача, 2 вида.]]></description>
+</offer>
+<offer id="12">
+<name>СЕТ 1 ДЛЯ ДВОИХ</name>
+<url>https://delivery.pitano.ru/?product=set2#Sets</url>
+<price>1390</price>
+<currencyId>RUR</currencyId>
+<categoryId>1</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/0c7766f5b58383c0ebbb12ae06d35a1a.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Неополетанская пицца ПЕППЕРОНИ 30 см, пицца КУРИНАЯ  30 см, морс на двоих в подарок.]]></description>
+</offer>
+<offer id="13">
+<name>СЕТ 2 ДЛЯ ДВОИХ</name>
+<url>https://delivery.pitano.ru/?product=set3#Sets</url>
+<price>1390</price>
+<currencyId>RUR</currencyId>
+<categoryId>1</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/d0553ab9c0aa5227b3afda054cf5b0e9.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Неополетанская пицца КАПРИЧОЗА 30 см, ПАРМЕДЖАНО 30 см, морс на двоих в подарок.]]></description>
+</offer>
+<offer id="15">
+<name>СЕТ БОЛЬШОЙ PITANO</name>
+<url>https://delivery.pitano.ru/?product=set5#Sets</url>
+<price>2450</price>
+<currencyId>RUR</currencyId>
+<categoryId>1</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/eb829b9a7178d554f436decabf9f8756.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Неополетанская пицца МЯСНАЯ 30 см, ГРИБНАЯ 30 см, КУРИНАЯ 30 см, ГРУША ГОРГОНЗОЛА 30 см]]></description>
+</offer>
+<offer id="14">
+<name>СЕТ БОЛЬШОЙ PIZZA</name>
+<url>https://delivery.pitano.ru/?product=set4#Sets</url>
+<price>2350</price>
+<currencyId>RUR</currencyId>
+<categoryId>1</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/670cd9eb5ab5e1d504502bd6d9c13b44.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Неополетанская пицца С ПАРМСКИМ ОКОРОКОМ 30 см, закрытая пицца КАЛЬЦОНЕ, МОРСКАЯ 30 см, сладкая пицца МАЛИНА 30 см.]]></description>
+</offer>
+<offer id="16">
+<name>СЕТ 6 ПИЦЦ</name>
+<url>https://delivery.pitano.ru/?product=set6#Sets</url>
+<price>3520</price>
+<currencyId>RUR</currencyId>
+<categoryId>1</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/01f4d54309af3342cf26f519441ddffa.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Неополетанская пицца ДИАБЛО 30 см, ПЕППЕРОНИ 30 см, С СЁМГОЙ 30 см, ЧЕТЫРЕ СЫРА 30 см, КУРИНАЯ 30 см, ПИЦЦА с МАЛИНОЙ 30 см.]]></description>
+</offer>
+<offer id="17">
+<name>РИМСКИЙ СЕТ 1</name>
+<url>https://delivery.pitano.ru/?product=set7#Sets</url>
+<price>1390</price>
+<currencyId>RUR</currencyId>
+<categoryId>1</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/97b6f4cc19c0dd4c4b3536c5e57128d3.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Римская пицца МЯСНАЯ 20х30 см, КУРИНАЯ 20х30 см, морс в подарок]]></description>
+</offer>
+<offer id="18">
+<name>РИМСКИЙ СЕТ 2</name>
+<url>https://delivery.pitano.ru/?product=set8#Sets</url>
+<price>1390</price>
+<currencyId>RUR</currencyId>
+<categoryId>1</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/3f4978ede22dd073fecff524ab898f3c.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Римская пицца ПЕППЕРОНИ С РУККОЛОЙ 20х30 см, ВЕТЧИНА С ГРИБАМИ 20х30 см, морс в подарок]]></description>
+</offer>
+<offer id="19">
+<name>РИМСКИЙ СЕТ 3</name>
+<url>https://delivery.pitano.ru/?product=set9#Sets</url>
+<price>2350</price>
+<currencyId>RUR</currencyId>
+<categoryId>1</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/472c16788466307a55455002232aeadc.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Римская пицца ПЕППЕРОНИ С РУККОЛОЙ 20х30 см, ВЕГЕТАРИАНСКАЯ 20х30 см, ВЕТЧИНА С ГРИБАМИ 20х30 см, КУРИНАЯ 20х30 см,]]></description>
+</offer>
+<offer id="110">
+<name>РИМСКИЙ СЕТ 4</name>
+<url>https://delivery.pitano.ru/?product=set10#Sets</url>
+<price>2350</price>
+<currencyId>RUR</currencyId>
+<categoryId>1</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/d2db666c118eb4517df3086f8d55838d.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Римская пицца МЯСНАЯ 20х30 см, ВЕТЧИНА С ГРИБАМИ 20х30 см, ПАРМЕДЖАНО 20х30 см, МАРГАРИТА 20х30 см,]]></description>
+</offer>
+<offer id="111">
+<name>БОЛЬШОЙ РИМСКИЙ СЕТ</name>
+<url>https://delivery.pitano.ru/?product=set11#Sets</url>
+<price>3520</price>
+<currencyId>RUR</currencyId>
+<categoryId>1</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/77dd1ac5f7b8d640713d42598c1cc6a5.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Римская пицца МЯСНАЯ 20х30 см, ПЕППЕРОНИ С РУККОЛОЙ 20х30 см, КВАТРО ФОРМИДЖИО 20х30 см, ВЕГЕТАРИАНСКАЯ 20х30 см, ТУНЕЦ С БЕКОНОМ 20х30 см, КУРИНАЯ 20х30 см,]]></description>
+</offer>
+<offer id="223">
+<name>КАРБОНАРА</name>
+<url>https://delivery.pitano.ru/?product=pasta23#Pasta</url>
+<price>640</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/ec5e21cbaac594a90b1fc667713fa91f.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Сливочный соус, бекон, перечный соус, сыр моцарелла, желток, сыр пармезан.]]></description>
+</offer>
+<offer id="221">
+<name>ЧЕТЫРЕ МЯСА</name>
+<url>https://delivery.pitano.ru/?product=pasta21#Pasta</url>
+<price>790</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/ce5a0960f51958a6722666e344d04964.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томаты протертые, ветчина, филе куриное, ростбиф, колбаски чоризо, моцарелла 30 см]]></description>
+</offer>
+<offer id="23">
+<name>МАРГАРИТА</name>
+<url>https://delivery.pitano.ru/?product=pasta3#Pasta</url>
+<price>450</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/fabbfa7fed2972426a2f93ec0faac647.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томаты протертые, моцарелла, орегано, оливковое масло, базилик. 30 см.]]></description>
+</offer>
+<offer id="24">
+<name>ЧЕТЫРЕ СЫРА</name>
+<url>https://delivery.pitano.ru/?product=pasta4#Pasta</url>
+<price>690</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/dd6f24254575af1a247e839410b35783.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Соус сливочный, моцарелла, пармезан, сулугуни, горгонзолла. 30 см.]]></description>
+</offer>
+<offer id="222">
+<name>С БРЕЗАОЛОЙ</name>
+<url>https://delivery.pitano.ru/?product=pasta22#Pasta</url>
+<price>700</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/723c3d26a8d1c9c5f7b68d3e7b832a92.jpeg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Пицца с брезаолой и страчателлой.]]></description>
+</offer>
+<offer id="220">
+<name>БУРРАТА С РУККОЛОЙ</name>
+<url>https://delivery.pitano.ru/?product=pasta20#Pasta</url>
+<price>850</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/54d05fa12dbc599044c44634fc414d6d.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Буррата с рукколой, томатами и песто. 30 см]]></description>
+</offer>
+<offer id="219">
+<name>БУРАТТА С ОКОРОКОМ</name>
+<url>https://delivery.pitano.ru/?product=pasta19#Pasta</url>
+<price>850</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/af9f4cf6598219a474f9d81051029014.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Буррата с пармским окороком, рукколой и песто. 30 см]]></description>
+</offer>
+<offer id="21">
+<name>ГРИБНАЯ</name>
+<url>https://delivery.pitano.ru/?product=pasta1#Pasta</url>
+<price>790</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/0ce23e0f881052c423f393e7d69ed426.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Сливочный соус, шампиньоны, паста трюфельная, моцарелла, пармезан, базилик. 30 см.]]></description>
+</offer>
+<offer id="22">
+<name>ЛАМПОНЕ</name>
+<url>https://delivery.pitano.ru/?product=pasta2#Pasta</url>
+<price>560</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/23b30e9708f9bc08791c4b5368d2dd48.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Сладкая пицца. Соус маскарпоне, малина, мята. 30 см.]]></description>
+</offer>
+<offer id="25">
+<name>СЕМГА С КРЕВЕТКАМИ</name>
+<url>https://delivery.pitano.ru/?product=pasta5#Pasta</url>
+<price>860</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/8504ac97c9011682d53e5cbb244bf22a.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Соус сливочный, семга с/с, томаты черри, моцарелла, цедра лимона, крем-сыр. 30 см.]]></description>
+</offer>
+<offer id="26">
+<name>ТУНЕЦ С ЛУКОМ И КАПЕРСАМИ</name>
+<url>https://delivery.pitano.ru/?product=pasta6#Pasta</url>
+<price>650</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/6192e2485e9723ff0ffafeb8829880b2.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томаты протертые, тунец, моцарелла, базилик, красный лук. 30 см.]]></description>
+</offer>
+<offer id="27">
+<name>ДИАБЛО</name>
+<url>https://delivery.pitano.ru/?product=pasta7#Pasta</url>
+<price>670</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/087223d98420def3b81ac043a81783d6.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томаты протертые, бекон, колбаски "Чоризо", моцарелла, перец чили. 30 см.]]></description>
+</offer>
+<offer id="28">
+<name>С ПАРМСКИМ ОКОРОКОМ</name>
+<url>https://delivery.pitano.ru/?product=pasta8#Pasta</url>
+<price>730</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/f22389dd2aba08e6f6414ff02946d558.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томаты протертые, пармский окорок, черри, моцарелла, руккола. 30 см.]]></description>
+</offer>
+<offer id="29">
+<name>КАЛЬЦОНЕ</name>
+<url>https://delivery.pitano.ru/?product=pasta9#Pasta</url>
+<price>510</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/4fd35c4bda90bf257ce9647cf0ea74f2.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Закрытая пицца с колбасками "Чоризо", рикотта, протертые томаты, моцарелла. 30 см.]]></description>
+</offer>
+<offer id="210">
+<name>ПАРМЕДЖАНО</name>
+<url>https://delivery.pitano.ru/?product=pasta10#Pasta</url>
+<price>690</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/af025508b9c545887843ffce6c1f32fd.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томаты протертые, баклажан запеченый, пармезан, томаты, соус песто, моцарелла, базилик. 30 см.]]></description>
+</offer>
+<offer id="211">
+<name>ГРУША ГОРГОНЗОЛЛА</name>
+<url>https://delivery.pitano.ru/?product=pasta11#Pasta</url>
+<price>720</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/2aca9bd1a56175ee59bb4d198567c9d7.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Груша горгонзола, соус маскарпоне, орех кедровый, мята. 30 см.]]></description>
+</offer>
+<offer id="212">
+<name>КАПРИЧОЗА</name>
+<url>https://delivery.pitano.ru/?product=pasta12#Pasta</url>
+<price>750</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/91cdacbdb3f519ee3465ddf123fcb2b8.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томаты протертые, ветчина мраморная, моцарелла, артишок, оливки, базилик. 30 см.]]></description>
+</offer>
+<offer id="213">
+<name>ПЕППЕРОНИ</name>
+<url>https://delivery.pitano.ru/?product=pasta13#Pasta</url>
+<price>650</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/dbcd264646742ff42f4fa37b359bb70e.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томаты протертые, острая салями, моцарелла. 30 см.]]></description>
+</offer>
+<offer id="214">
+<name>ВЕГЕТАРИАНСКАЯ</name>
+<url>https://delivery.pitano.ru/?product=pasta14#Pasta</url>
+<price>530</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/c90c6110e45cad1ded98b60dff7bd75c.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томаты протертые, печеные овощи, лесные грибы, моцарелла, артишок, оливки каламата. 30 см.]]></description>
+</offer>
+<offer id="215">
+<name>С МОРЕПРОДУКТАМИ</name>
+<url>https://delivery.pitano.ru/?product=pasta15#Pasta</url>
+<price>700</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/becca4ddbd2b6665bb6ab447f35b68bc.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томаты протертые, моцарелла, креветки, мидии, тунец, базилик, помидоры черри. 30 см.]]></description>
+</offer>
+<offer id="216">
+<name>С РОСТБИФОМ И ЛУКОМ</name>
+<url>https://delivery.pitano.ru/?product=pasta16#Pasta</url>
+<price>800</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/ae1e1f16b956144d6d4718cddbed5b43.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томаты протертые, моцарелла, ростбиф «су-вид», карамелизированный лук, руккола. 30 см.]]></description>
+</offer>
+<offer id="218">
+<name>КУРИНАЯ</name>
+<url>https://delivery.pitano.ru/?product=pasta18#Pasta</url>
+<price>670</price>
+<currencyId>RUR</currencyId>
+<categoryId>2</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/dda7fc555a5e1478a65086b57be5416e.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Чесночный соус, соус томатный, ветчина, куриная грудка «су-вид», моцарелла, томаты черри, базилик]]></description>
+</offer>
+<offer id="31">
+<name>МАРГАРИТА</name>
+<url>https://delivery.pitano.ru/?product=pinza1#Pinza</url>
+<price>450</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://delivery.pitano.ru/</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томаты протертые, моцарелла, орегано, оливковое масло, базилик.<br/>20х30 см]]></description>
+</offer>
+<offer id="32">
+<name>ВЕТЧИНА С ГРИБАМИ</name>
+<url>https://delivery.pitano.ru/?product=pinza2#Pinza</url>
+<price>790</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://delivery.pitano.ru/</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томаты протертые, ветчина, шампиньоны, артишок, моцарелла. <br/>20х30 см]]></description>
+</offer>
+<offer id="33">
+<name>ПЕППЕРОНИ С РУККОЛОЙ</name>
+<url>https://delivery.pitano.ru/?product=pinza3#Pinza</url>
+<price>790</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://delivery.pitano.ru/</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томаты протертые, пепперони, моцарелла, руккола, оливки. <br/>20х30 см]]></description>
+</offer>
+<offer id="34">
+<name>ВЕГЕТАРИАНСКАЯ</name>
+<url>https://delivery.pitano.ru/?product=pinza4#Pinza</url>
+<price>690</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://delivery.pitano.ru/</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томаты протертые, печеные овощи, шампиньоны, моцарелла, артишок, оливки каламата. <br/>20х30 см]]></description>
+</offer>
+<offer id="35">
+<name>КВАТРО ФОРМАДЖИО</name>
+<url>https://delivery.pitano.ru/?product=pinza5#Pinza</url>
+<price>610</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://delivery.pitano.ru/</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Соус сливочный, моцарелла, пармезан, сулугуни, горгонзола. <br/>20х30 см]]></description>
+</offer>
+<offer id="36">
+<name>ТУНЕЦ С БЕКОНОМ И КРАСНЫМ ЛУКОМ</name>
+<url>https://delivery.pitano.ru/?product=pinza6#Pinza</url>
+<price>750</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://delivery.pitano.ru/</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томаты протертые, тунец, бекон, моцарелла, артишок, каперсы, маслины каламата, красный лук. <br/>20х30 см]]></description>
+</offer>
+<offer id="37">
+<name>С ПАРМСКИМ ОКОРОКОМ</name>
+<url>https://delivery.pitano.ru/?product=pinza7#Pinza</url>
+<price>750</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://delivery.pitano.ru/</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томаты протертые, пармский окорок, черри, моцарелла, руккола. <br/>20х30 см]]></description>
+</offer>
+<offer id="38">
+<name>ГРУША ФЛАМБЕ С ГОРГОНЗОЛОЙ</name>
+<url>https://delivery.pitano.ru/?product=pinza8#Pinza</url>
+<price>750</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://delivery.pitano.ru/</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Груша фламбированная, горгонзола, соус маскарпоне, орех кедровый, мята. <br/>20х30 см]]></description>
+</offer>
+<offer id="39">
+<name>СЕМГА С КРЕВЕТКАМИ</name>
+<url>https://delivery.pitano.ru/?product=pinza9#Pinza</url>
+<price>810</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://delivery.pitano.ru/</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Соус сливочный, семга, креветки, томаты черри, моцарелла, цедра лимона, крем – сыр. <br/>20х30 см]]></description>
+</offer>
+<offer id="310">
+<name>С АНЧОУСОМ И СЫРОМ СТРАЧАТЕЛЛА</name>
+<url>https://delivery.pitano.ru/?product=pinza10#Pinza</url>
+<price>750</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://delivery.pitano.ru/</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томаты протертые, анчоусы, томаты вяленные,  руккола, страчателла, бальзамический крем. <br/>20х30 см]]></description>
+</offer>
+<offer id="311">
+<name>ПАРМЕДЖАНО</name>
+<url>https://delivery.pitano.ru/?product=pinza11#Pinza</url>
+<price>750</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://delivery.pitano.ru/</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томаты протертые, баклажан запеченый, пармезан, томаты, соус песто, моцарелла, базилик. <br/>20х30 см]]></description>
+</offer>
+<offer id="313">
+<name>ДЬЯБЛО</name>
+<url>https://delivery.pitano.ru/?product=pinza13#Pinza</url>
+<price>750</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://delivery.pitano.ru/</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Соус томатный, сырокопченый бекон, колбаски Чирозо, помидоры черри, моцарелла, перец халапеньо, масло оливковое, базилик.]]></description>
+</offer>
+<offer id="314">
+<name>ГРИБНАЯ</name>
+<url>https://delivery.pitano.ru/?product=pinza14#Pinza</url>
+<price>670</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://delivery.pitano.ru/</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Соус сливочный, белые грибы, сыр моцарелла, пармезан, петрушка, оливковое масло.]]></description>
+</offer>
+<offer id="315">
+<name>МЯСНАЯ</name>
+<url>https://delivery.pitano.ru/?product=pinza15#Pinza</url>
+<price>780</price>
+<currencyId>RUR</currencyId>
+<categoryId>3</categoryId>
+<picture>https://delivery.pitano.ru/</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Соус сливочно - томатный, ветчина, бекон, пепперони, моцарелла, оливки каламата, каперсы. <br/>20х30 см]]></description>
+</offer>
+<offer id="429">
+<name>Салат с курицей и авокадо</name>
+<url>https://delivery.pitano.ru/?product=salat29#Salat</url>
+<price>450</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/7e90747fccc15d31e18dc90b06903cde.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Куриное филе, запечённое на гриле, салат айсберг, руккола, помидоры черри, авокадо, бобы Эдамаме, соево-кунжутная заправка.]]></description>
+</offer>
+<offer id="428">
+<name>БРУСКЕТТЫ</name>
+<url>https://delivery.pitano.ru/?product=salat28#Salat</url>
+<price>390</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/eb71e61cfd86e56e420414a47a9ba6fe.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Брускетты с сёмгой и авокадо.]]></description>
+</offer>
+<offer id="423">
+<name>САЛАТ С КУРИНОЙ ПЕЧЕНЬЮ</name>
+<url>https://delivery.pitano.ru/?product=salat23#Salat</url>
+<price>410</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/9c63f4a140d5dbf1cbaf519016f65156.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Салат с куриной печенью и грушей фламбе.]]></description>
+</offer>
+<offer id="417">
+<name>САЛАТ С КУРИНЫМ ФИЛЕ</name>
+<url>https://delivery.pitano.ru/?product=salat17#Salat</url>
+<price>370</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/40a240dfaa334341fce32da89edf06a9.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Салат с куриным филе на гриле и печёными овощами.]]></description>
+</offer>
+<offer id="427">
+<name>РОСТБИФ СУ-ВИД</name>
+<url>https://delivery.pitano.ru/?product=salat27#Salat</url>
+<price>490</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/687ca1f86ea063e29e958dbc92f45afe.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Ростбиф с медово-горчичным соусом и рукколой.]]></description>
+</offer>
+<offer id="416">
+<name>ПАРМЕДЖАНО</name>
+<url>https://delivery.pitano.ru/?product=salat16#Salat</url>
+<price>450</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/7ee249905dfd9e5402b10f4658ded3a1.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[с печёными баклажанами, моцареллой и свежими овощами.]]></description>
+</offer>
+<offer id="418">
+<name>ТЁПЛЫЙ САЛАТ</name>
+<url>https://delivery.pitano.ru/?product=salat18#Salat</url>
+<price>690</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/39d284fadda0cd66b60d5db2b0dfc6b9.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Тёплый салат с морепродуктами.]]></description>
+</offer>
+<offer id="422">
+<name>ЦЕЗАРЬ С КУРИЦЕЙ</name>
+<url>https://delivery.pitano.ru/?product=salat22#Salat</url>
+<price>480</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/2bdedaaeb7927ce65982e2f7b2a7b6cd.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Под классическим соусом из анчоуса.]]></description>
+</offer>
+<offer id="419">
+<name>ЦЕЗАРЬ С СЁМГОЙ</name>
+<url>https://delivery.pitano.ru/?product=salat19#Salat</url>
+<price>530</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/e22dd5279e8f4cd9e301710f9a94f6a0.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Под классическим соусом из анчоуса.]]></description>
+</offer>
+<offer id="420">
+<name>ЦЕЗАРЬ С КРЕВЕТКАМИ</name>
+<url>https://delivery.pitano.ru/?product=salat20#Salat</url>
+<price>530</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/fcbbca654dbdfc93695f64c87292ef0d.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Под классическим соусом из анчоуса.]]></description>
+</offer>
+<offer id="421">
+<name>САЛАТ С ТУНЦОМ</name>
+<url>https://delivery.pitano.ru/?product=salat21#Salat</url>
+<price>450</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/88794c07197302b79e08290af528303f.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Под фирменной медово-горчичной заправкой.]]></description>
+</offer>
+<offer id="412">
+<name>ПАНЦАНЕЛЛА</name>
+<url>https://delivery.pitano.ru/?product=salat12#Salat</url>
+<price>470</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/1164135def879e9b00c80f60d70943a9.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Классический итальянский овощной салат с ломтиками фокаччи]]></description>
+</offer>
+<offer id="41">
+<name>С ПЕЧЕНОЙ СВЕКЛОЙ</name>
+<url>https://delivery.pitano.ru/?product=salat1#Salat</url>
+<price>450</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/779d4c83cc1645b57b3dec3f29f7ecd3.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Салат с печеной свеклой, рукколой, грецким орехом и сыром Горгонзолла.]]></description>
+</offer>
+<offer id="46">
+<name>САЛАТ С ТУНЦОМ И АВОКАДО</name>
+<url>https://delivery.pitano.ru/?product=salat6#Salat</url>
+<price>560</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/1f585e468899725e9135b52308c7ad82.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Салат с тунцом, авокадо и киноа под кунжутной заправкой.]]></description>
+</offer>
+<offer id="411">
+<name>САЛАТ С РОСТБИФОМ</name>
+<url>https://delivery.pitano.ru/?product=salat11#Salat</url>
+<price>560</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/f08d0a0ae2112feefaecfc7948200dee.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Салат с ростбифом су-вид и печёными перцами]]></description>
+</offer>
+<offer id="413">
+<name>РУККОЛА С КРЕВЕТКАМИ</name>
+<url>https://delivery.pitano.ru/?product=salat13#Salat</url>
+<price>680</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/453805fb328cec3445f5c6ffc10137b6.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Салат из рукколы с креветками и пармезаном.]]></description>
+</offer>
+<offer id="415">
+<name>СЫРНЫЕ ПАЛОЧКИ</name>
+<url>https://delivery.pitano.ru/?product=salat15#Salat</url>
+<price>430</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/8179e55ea9409068560ee60a928f995e.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Сырные палочки с томатным соусом.]]></description>
+</offer>
+<offer id="426">
+<name>БАКЛАЖАНЫ ПАРМЕДЖАНО</name>
+<url>https://delivery.pitano.ru/?product=salat26#Salat</url>
+<price>670</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/6e3e40f234bf8d451fef3b184b8b2d68.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Баклажаны запечённые с моцареллой и сыром пармезан.]]></description>
+</offer>
+<offer id="425">
+<name>КУРИНАЯ ГРУДКА СУ-ВИД</name>
+<url>https://delivery.pitano.ru/?product=salat25#Salat</url>
+<price>480</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/0aa536ab4ca038d9a48ec5551d8b0659.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Куриная грудка су-вид с булгуром, кедровым орехом и песто из печёных перцев.]]></description>
+</offer>
+<offer id="424">
+<name>ФИЛЕ СВИНИНЫ</name>
+<url>https://delivery.pitano.ru/?product=salat24#Salat</url>
+<price>490</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/6a2c04906fb459b6cfe0ba8e7aa26c9f.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Филе свинины под перечным соусом с печёным картофелем.]]></description>
+</offer>
+<offer id="414">
+<name>КАПРЕЗЕ</name>
+<url>https://delivery.pitano.ru/?product=salat14#Salat</url>
+<price>590</price>
+<currencyId>RUR</currencyId>
+<categoryId>4</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/b15f6177ac79428e599b6faa788a6a07.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Капрезе]]></description>
+</offer>
+<offer id="57">
+<name>Суп тосканский</name>
+<url>https://delivery.pitano.ru/?product=soup7#Soup</url>
+<price>390</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/d527396599b2ca59edcbbc86463c0a41.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Картофель, болгарский перец, томаты, красная фасоль, филе говядины.]]></description>
+</offer>
+<offer id="54">
+<name>ТЫКВЕННЫЙ СУП</name>
+<url>https://delivery.pitano.ru/?product=soup4#Soup</url>
+<price>390</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/4207891efec118180302f5217ad9f7c7.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Крем-суп из тыквы с креветками]]></description>
+</offer>
+<offer id="56">
+<name>ТОМАТНЫЙ СУП</name>
+<url>https://delivery.pitano.ru/?product=soup6#Soup</url>
+<price>670</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/3180b6c1932fcabfcc88c30ecd91952e.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Томатный суп из морепродуктов]]></description>
+</offer>
+<offer id="52">
+<name>КРУМ СУП ИЗ БЕЛЫХ ГРИБОВ</name>
+<url>https://delivery.pitano.ru/?product=soup2#Soup</url>
+<price>390</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/25a77c0a0d84c1a062be70aca95bc6b9.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Суп крем из белых грибов и трюфельным маслом.]]></description>
+</offer>
+<offer id="51">
+<name>КУРИНЫЙ СУП С ПРЯНОСТЯМИ</name>
+<url>https://delivery.pitano.ru/?product=soup1#Soup</url>
+<price>350</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/916900dae60c3dfe54b3e3a2fb77e9c6.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Куриный суп с пряностями и птитим.]]></description>
+</offer>
+<offer id="53">
+<name>СУП ИЗ ПЕЧЁНЫХ ОВОЩЕЙ</name>
+<url>https://delivery.pitano.ru/?product=soup3#Soup</url>
+<price>360</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/2bf7866fb5b751301010de8455c2cd98.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Крем-суп из печёных овощей с беконом.]]></description>
+</offer>
+<offer id="55">
+<name>МИНЕСТРОНЕ</name>
+<url>https://delivery.pitano.ru/?product=soup5#Soup</url>
+<price>390</price>
+<currencyId>RUR</currencyId>
+<categoryId>5</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/449d8330781fbf7168caff6dfaf630de.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Суп минестроне]]></description>
+</offer>
+<offer id="616">
+<name>РАВИОЛИ</name>
+<url>https://delivery.pitano.ru/?product=makaron16#Makaron</url>
+<price>510</price>
+<currencyId>RUR</currencyId>
+<categoryId>6</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/8e818070d85e10f63602010c8312ddde.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Равиоли с креветками и вялеными томатами.]]></description>
+</offer>
+<offer id="62">
+<name>ФЕТУЧИНИ А-ЛЯ НОРМА</name>
+<url>https://delivery.pitano.ru/?product=makaron2#Makaron</url>
+<price>480</price>
+<currencyId>RUR</currencyId>
+<categoryId>6</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/fb718ebef267a602164e5b36ac2649a7.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Фетучини а-ля норма с печёными овощами в томатном соусе с базиликом.]]></description>
+</offer>
+<offer id="63">
+<name>СПАГЕТТИ С МОРЕПРОДУКТАМИ</name>
+<url>https://delivery.pitano.ru/?product=makaron3#Makaron</url>
+<price>670</price>
+<currencyId>RUR</currencyId>
+<categoryId>6</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/d8a2d3258f846bf29027ab3aa0c725d6.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Спагетти с морепродуктами в томатном соусе.]]></description>
+</offer>
+<offer id="64">
+<name>КАЗАРЕЧЧЕ</name>
+<url>https://delivery.pitano.ru/?product=makaron4#Makaron</url>
+<price>690</price>
+<currencyId>RUR</currencyId>
+<categoryId>6</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/6ad2e7a7257fe61322899439013688d6.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Казаречче с сёмгой, брокколи, красной икрой в сливочном соусе.]]></description>
+</offer>
+<offer id="65">
+<name>ФИЗИЛЛИ 4 СЫРА</name>
+<url>https://delivery.pitano.ru/?product=makaron5#Makaron</url>
+<price>430</price>
+<currencyId>RUR</currencyId>
+<categoryId>6</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/485e6fb1bf1968eb4d861e2b2784810f.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Моцарелла, пармезан, горгонзола, сливочный сыр.]]></description>
+</offer>
+<offer id="66">
+<name>СПАГЕТТИ КАРБОНАРА</name>
+<url>https://delivery.pitano.ru/?product=makaron6#Makaron</url>
+<price>450</price>
+<currencyId>RUR</currencyId>
+<categoryId>6</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/95e66486104052661db47aa1d53c071f.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[С копчёным беконом, соус из желтков и чёрного перца.]]></description>
+</offer>
+<offer id="67">
+<name>СПАГЕТТИ АМАТРИЧАНА</name>
+<url>https://delivery.pitano.ru/?product=makaron7#Makaron</url>
+<price>460</price>
+<currencyId>RUR</currencyId>
+<categoryId>6</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/e6bf2ba65ec2ae7bc8b051a514cfc06b.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[В томатном соусе с беконом и чили.]]></description>
+</offer>
+<offer id="68">
+<name>СПАГЕТТИ БОЛОНЬЕЗЕ</name>
+<url>https://delivery.pitano.ru/?product=makaron8#Makaron</url>
+<price>460</price>
+<currencyId>RUR</currencyId>
+<categoryId>6</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/a1e4efe1d37525a936666846d3dc0acd.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[С фаршем из говядины в томатном соусе.]]></description>
+</offer>
+<offer id="69">
+<name>ФЕТУЧИНИ ГАМБЕРЕТТИ</name>
+<url>https://delivery.pitano.ru/?product=makaron9#Makaron</url>
+<price>490</price>
+<currencyId>RUR</currencyId>
+<categoryId>6</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/73e35a176659eac89236cb3e715f46b9.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[С креветками, цукини, томатами и сливочным биском.]]></description>
+</offer>
+<offer id="610">
+<name>РАВИОЛИ ПО-ПОТЕНТИЙСКИ</name>
+<url>https://delivery.pitano.ru/?product=makaron10#Makaron</url>
+<price>570</price>
+<currencyId>RUR</currencyId>
+<categoryId>6</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/09447f9a9c75aa6338b885e4e438e648.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[С фаршем из пармской ветчины, двух видов сыра и свежей зелени]]></description>
+</offer>
+<offer id="612">
+<name>ПАСТА С КУРИНЫМ ФИЛЕ</name>
+<url>https://delivery.pitano.ru/?product=makaron12#Makaron</url>
+<price>510</price>
+<currencyId>RUR</currencyId>
+<categoryId>6</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/4f5ff26d5448b3432e388d6296176b4e.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[И вялеными томатами с соусом песто.]]></description>
+</offer>
+<offer id="611">
+<name>РАВИОЛИ</name>
+<url>https://delivery.pitano.ru/?product=makaron11#Makaron</url>
+<price>570</price>
+<currencyId>RUR</currencyId>
+<categoryId>6</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/b96a5d47c7d3e89aecc52fffc27aa0a3.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[С сёмгой и шпинатом под сливочным соусом с красной икрой.]]></description>
+</offer>
+<offer id="613">
+<name>НЬОККИ С ФРИКАДЕЛЬКАМИ</name>
+<url>https://delivery.pitano.ru/?product=makaron13#Makaron</url>
+<price>335</price>
+<currencyId>RUR</currencyId>
+<categoryId>6</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/f72d703b2460779297c3c4c10e1f8399.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[В томатном соусе.]]></description>
+</offer>
+<offer id="615">
+<name>НЬОККИ</name>
+<url>https://delivery.pitano.ru/?product=makaron15#Makaron</url>
+<price>450</price>
+<currencyId>RUR</currencyId>
+<categoryId>6</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/b2619a1135f79db9fbabff39d8f61b0a.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Ньокки с грибами и вялеными томатами.]]></description>
+</offer>
+<offer id="614">
+<name>НЬОККИ</name>
+<url>https://delivery.pitano.ru/?product=makaron14#Makaron</url>
+<price>490</price>
+<currencyId>RUR</currencyId>
+<categoryId>6</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/de692afa1ec4c3f21fab8be6ff73a9d4.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[С тушёной лопаткой.]]></description>
+</offer>
+<offer id="88">
+<name>ДОМАШНИЕ ПОНЧИКИ</name>
+<url>https://delivery.pitano.ru/?product=desserts8#Dessert</url>
+<price>260</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/1c61a6af6028649d2dfb29085e46db59.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Домашние пончики с шоколадным кремом]]></description>
+</offer>
+<offer id="810">
+<name>Сырники</name>
+<url>https://delivery.pitano.ru/?product=desserts10#Dessert</url>
+<price>350</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/29f90f066c994e557e4e499aa6a2c0b0.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Сырники с сыром рикотта]]></description>
+</offer>
+<offer id="89">
+<name>ТОРТ НАПОЛЕОН</name>
+<url>https://delivery.pitano.ru/?product=desserts9#Dessert</url>
+<price>260</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/506ebce3d8c19ecb405461ca222aa74a.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Торт наполеон с заварным кремом и маскарпоне]]></description>
+</offer>
+<offer id="81">
+<name>Шоколадная колбаса</name>
+<url>https://delivery.pitano.ru/?product=desserts1#Dessert</url>
+<price>260</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/2ee7418b11ebf030b737a80400410fbb.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Пирожное с грецким орехом и печеньем савоярди подается с топленым шоколадом.]]></description>
+</offer>
+<offer id="85">
+<name>ТИРАМИСУ</name>
+<url>https://delivery.pitano.ru/?product=desserts5#Dessert</url>
+<price>300</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/9954a5896c73976c0a382c4a1cce5758.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Воздушный Итальянский десерт]]></description>
+</offer>
+<offer id="82">
+<name>ПРОФИТРОЛИ ДОМАШНИЕ</name>
+<url>https://delivery.pitano.ru/?product=desserts2#Dessert</url>
+<price>290</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/26b883d6795c15b5b267fe8a95763c53.jpg</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Профитроли домашние с кремом маскарпоне и топленым шоколадом]]></description>
+</offer>
+<offer id="83">
+<name>ПАННА КОТТА</name>
+<url>https://delivery.pitano.ru/?product=desserts3#Dessert</url>
+<price>280</price>
+<currencyId>RUR</currencyId>
+<categoryId>8</categoryId>
+<picture>https://delivery.pitano.ru/images/uploads/56b9c0dd3a09fffa3bcb6378c15fc0f0.JPG</picture>
+<delivery>true</delivery>
+<pickup>true</pickup>
+<store>true</store>
+<description><![CDATA[Сливочный десерт с желе манго-маракуйя]]></description>
+</offer>
+</offers>
+</shop>
+</yml_catalog>

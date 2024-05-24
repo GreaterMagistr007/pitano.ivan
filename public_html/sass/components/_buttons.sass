@@ -1,0 +1,74 @@
+@import "vars"
+
+.btn 
+	display: inline-block
+	// @include trans 
+	font-size: 15px
+	font-family: $sans
+	font-weight: 600
+	text-align: center
+	color: #fff
+	&--order 
+		cursor: pointer
+	&-promo 
+		margin-left: 7px
+		flex-shrink: 0
+		width: 30px
+		height: 30px
+		position: relative
+		border-radius: 2px
+		border: 1px solid $orange
+		svg 
+			position: absolute
+			left: 3px
+			top: 1px
+			path 
+				@include trans 
+		&:hover 
+			background-color: $orange
+			svg 
+				path 
+					fill: #fff 
+	&--bg 
+		background: url('../img/button-bg.svg') no-repeat center 
+		padding: 14px 55px
+		background-size: contain 
+		font-size: 18px
+		font-weight: 700
+		color: #fff
+		width: 100%
+		max-width: 274px
+	&--orange 
+		background: $orange 
+		padding: 5px 25px
+		background-size: 100% 100%
+		border-radius: 1px
+		font-size: 15px
+		width: 100%
+		max-width: 140px
+		position: relative
+		z-index: 1
+		transition: none 
+		&::before 
+			@extend %before 
+			height: 40px
+			width: 200px
+			background: url('../img/button-bg.svg') no-repeat center 
+			// background-size: 100% 100%
+			top: -5px
+			left: 0
+			opacity: 0
+			@include trans 
+			z-index: -1
+		&.active 
+			background: none 
+			max-width: 200px
+			&::before 
+				opacity: 1
+		&:hover   
+			background: none 
+			max-width: 200px
+			&::before 
+				opacity: 1
+
+  

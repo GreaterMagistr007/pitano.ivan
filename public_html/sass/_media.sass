@@ -1,0 +1,335 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+	.main
+		&-list 
+			a 
+				font-size: 16px
+			li 
+				+ 
+					li 
+						margin-left: 30px
+
+	.about
+		&-content
+			&__image
+				max-width: 560px
+				top: -120px
+
+	.card
+		&-main
+			&__item 
+				&--top
+					.card-main__item-content
+						max-width: 250px
+					.card-main__item-image
+						max-width: 500px
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 992px)
+	/**/
+
+	.desktop 
+		display: none 
+
+	.mobile 
+		display: block
+		&-menu 
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			.social 
+				justify-content: flex-end
+				span
+					color: #000
+			.footer-info__head
+				color: rgba(0, 0, 0, 0.8)
+				text-align: right
+
+	.hamburger
+		display: inline-block
+
+
+	.main 
+		&-list 
+			display: block
+			li 
+				+ 
+					li 
+						margin-left: 0
+						margin-top: 15px
+				a 
+					display: block 
+					max-width: 102px
+					box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25)
+					border-radius: 1px
+					padding: 10px 7px
+					text-align: center
+					font-size: 16px
+					font-weight: 700
+					&::before 
+						display: none !important
+		&-content 
+			padding: 60px 0
+		&-screen 
+			padding-top: 180px
+			padding-bottom: 140px
+			&__image 
+				max-width: 350px
+				right: 20px
+		&-nav 
+			position: fixed
+			width: 100%
+			height: 100%
+			left: 0
+			top: 0
+			transform: translateX(-100%)
+			transition: transform .4s ease
+			height: 395px
+			top: 45px
+			z-index: 120
+			padding: 40px 20px 55px
+			background-color: #fff
+			&.mobile 
+				display: flex
+				justify-content: space-between
+				.header 
+					&-contacts 
+						display: block
+						&__address 
+							margin-top: 12px
+			&.open 
+				transform: translateX(0)
+				z-index: 1000
+
+	.header
+		width: 100% !important
+		&-cart 
+			&__wrap
+				padding-right: 15px
+		&-contacts 
+			display: none
+
+	.about
+		&-content
+			&__image
+				display: none
+
+	.cards 
+		margin-bottom: 70px
+
+	.card 
+		margin-bottom: 60px
+		height: calc(100% - 60px)
+		&-main
+			&__row
+				margin-bottom: 30px
+			&__item 
+				&--top
+					.card-main__item-content
+						max-width: 190px
+					.card-main__item-image
+						max-width: 350px
+
+	.contacts
+		padding: 45px 0
+		.h2 
+			margin-bottom: 30px
+		> 
+			ymaps 
+				display: none !important
+
+	.order
+		&-scroll 
+			height: auto
+
+	.cart, .order 
+		right: 15px
+		left: auto
+
+	.modal 
+		padding: 20px 15px
+		&-content 
+			&__map 
+				> 
+					ymaps 
+						width: 100% !important 
+						height: 340px !important
+			&__wrap 
+				padding: 0
+				margin-bottom: 30px
+				p 
+					font-size: 14px
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 767px)
+	/**/
+
+	.main 	
+		margin-top: 46px
+		&-screen 
+			padding-top: 90px
+			padding-bottom: 260px
+			&__image 
+				max-width: 236px
+				right: 0px
+			&__subhead 
+				font-size: 18px
+
+	.about
+		&-content 
+			p 
+				font-size: 14px
+		&-top 
+			padding: 90px 0 70px
+			.logo 
+				img
+					display: block
+					margin: 0 auto
+					width: 190px
+
+	.cards
+		margin-bottom: 45px
+
+	.h1 
+		margin-bottom: 10px
+		img 
+			width: 196px
+
+	.h2 
+		&--small 
+			font-size: 24px
+			padding-left: 5px !important
+			padding-right: 5px !important
+
+	.header 	
+		padding-top: 7px
+		padding-bottom: 7px
+		&-cart 
+			&__wrap 
+				position: static
+			&__num 
+				top: -2px
+
+	.card
+		&-main 
+			&__row
+				flex-wrap: wrap
+				margin-bottom: 0
+			&__item 
+				width: 100%
+				display: flex 
+				flex-direction: column
+				margin-bottom: 60px
+				align-items: flex-start
+				&-content 
+					padding-right: 0
+					max-width: 100% !important 
+				&-image 
+					margin-bottom: 10px
+				&--right 
+					text-align: left
+					.card__content-head
+						order: -1 
+					.card-main__item-content
+						padding-left: 0
+				&--left 
+					.card-main__item-image
+						order: -1 
+				&--top
+					.card-main__item-content
+						max-width: 100%
+					.card-main__item-image
+						max-width: 100%
+						order: -1 
+
+	.logo 
+		&--footer 
+			margin-bottom: 40px
+			img 
+				display: block
+				margin: 0 auto
+		&--header 
+			img 
+				width: 42px
+
+	.contacts 
+		p 
+			font-size: 14px
+
+	.cart 
+		&-content 
+			height: auto
+
+	.cart, .order 
+		width: 100vw
+		left: 0
+		top: 46px
+		border-radius: 0
+		border: none 
+		height: calc(var(--vh, 1vh) * 100 - 46px)
+		background-color: #fff
+		z-index: 100
+		overflow-y: auto
+		-webkit-overflow-scrolling: touch
+
+	.order 
+		overflow-y: auto
+		-webkit-overflow-scrolling: touch
+		&-scroll 
+			
+		&-count 
+			margin-bottom: 15px
+		&-cart 
+			&__row 
+				flex-wrap: wrap
+				.cart-item__price
+					margin-left: auto
+				.cart-item__head
+					margin-bottom: 10px
+					max-width: 100%
+					width: calc(100% - 70px)
+				.cart-nav 
+					margin-left: 70px
+
+	.payment-choose input+label
+		font-size: 13px
+		padding-left: 4px
+		padding-right: 4px
+
+	.footer 
+		padding: 40px 0
+		&-info 
+			&__count 
+				margin-bottom: 25px
+		&__list 
+			margin-bottom: 35px
+			&-mobile 
+				display: flex
+				flex-wrap: wrap
+				li 
+					width: 50%
+					+ 
+						li 
+							margin-top: 0
+							margin-bottom: 12px
+
+	
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 480px)
+	/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 320px)
+	/**/
+
+	.payment-choose input+label
+		font-size: 10px
+		padding-left: 2px
+		padding-right: 2px

@@ -1,0 +1,117 @@
+@import "vars"
+
+.error 
+	color: $red 
+	margin-top: 5px
+	font-size: 13px
+
+.mCSB_container
+	-webkit-overflow-scrolling: touch
+
+.form 
+	input 
+		display: block
+		width: 100%
+		font-family: $sans
+		font-weight: 300
+		color: #000
+		@include trans 
+		-webkit-appearance: none 
+		border-radius: 1px
+		border: 1px solid #ababab
+		background-color: #ffffff
+		&.error 
+			border-color: $red 
+		&:hover, &:focus 
+			border: 1px solid darken(#ababab, 25%)
+		&::placeholder 
+			color: #bfbfbf
+			font-family: $sans
+			font-weight: 300
+	&-small 
+		&__label 
+			margin-bottom: 5px
+			font-size: 16px
+			display: block
+		input
+			font-size: 15px
+			padding: 3px 6px
+			border: 1px solid #c4c4c4
+			&:hover, &:focus 
+				border: 1px solid darken(#c4c4c4, 25%)
+			&::placeholder
+				font: 16px
+	&-cart 
+		.btn 
+			display: block
+			width: 100%
+			padding: 8px 15px
+			margin: 0 auto
+		&__row
+			display: flex
+		&__content 
+			margin-bottom: 15px
+			&-row 
+				display: flex
+				align-items: center
+				justify-content: flex-end
+				margin-bottom: 10px
+				&:last-child
+					margin-bottom: 0
+				.bold 
+					min-width: 75px
+					text-align: center
+	&-contacts 
+		max-width: 400px
+		margin: 0 auto
+		input
+			font-size: 18px
+			padding: 8px 14px
+			&::placeholder 
+				font-size: 18px
+	&-row 
+		margin-bottom: 25px
+	&__checkbox 
+		input[type="checkbox"]
+
+			display: none
+			+ 
+				label 
+					position: relative
+					cursor: pointer
+					display: block
+					padding-left: 22px
+					font-size: 14px
+					color: #818181
+					text-align: left
+					font-size: 10px 
+					a 
+						text-decoration: underline
+						&:hover 
+							text-decoration: none
+					&::before 
+						@extend %before 
+						width: 14px
+						height: 14px
+						top: -1px
+						left: 0
+						border: 1px solid #000
+						border-radius: 1px
+			&:checked 
+				+ 
+					label 
+						&::after 
+							@extend %before 
+							width: 8px
+							height: 8px
+							background: url('../img/policy-check.svg') no-repeat center 
+							left: 3px
+							top: 2px
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+	-webkit-appearance: none
+	margin: 0
+
+input[type=number]
+	-moz-appearance: textfield

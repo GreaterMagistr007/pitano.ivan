@@ -1,0 +1,46 @@
+#1566747493
+cd public_html/
+#1566747497
+nano mail.php
+#1566747530
+rm mail.php 
+#1566747543
+nano mail.php
+#1566747559
+rm mail.php 
+#1568822159
+ll
+#1568822170
+cd vendor/
+#1568822170
+ll
+#1568822186
+cd laravel
+#1568822187
+ll
+#1568822190
+cd framework/
+#1568822190
+ll
+#1568822196
+cd src/
+#1568822197
+ll
+#1568822199
+cd Illuminate/
+#1568822200
+ll
+#1568822209
+cd Database/
+#1568822209
+ll
+#1568822216
+vim composer.json 
+#1568822248
+cd
+#1568822252
+cd public_html/
+#1568822253
+ll
+#1568822258
+vim .htaccess 

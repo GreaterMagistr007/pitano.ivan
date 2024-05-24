@@ -1,0 +1,87 @@
+@import "vars"
+
+body, html 
+	&.hidden 
+		overflow: hidden
+		height: 100%
+
+.logo 
+	img 
+		display: block
+
+.header
+	padding: 5px 0
+	position: fixed
+	width: 100%
+	left: 0
+	top: 0
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+	background-color: #fff
+	z-index: 99
+	&.move 
+		width: calc(100% - 17px)
+	&-row 
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&-contacts 
+		text-align: right
+		&__address
+			margin-bottom: 4px
+		&__phone 
+			font-weight: 700
+	&-cart 
+		position: relative
+		cursor: pointer
+		&__wrap
+			position: relative
+		img 
+			display: block
+		&__num 
+			border-radius: 4px
+			background-color: $red 
+			color: #ffffff
+			font-size: 10px
+			text-align: center
+			position: absolute
+			top: -6px
+			right: -15px
+			padding: 0 5px
+
+.main 
+	&-list 
+		display: flex
+		align-items: center
+		li 
+			+ 
+				li 
+					margin-left: 55px
+		a 
+			display: inline-block
+			position: relative
+			font-size: 18px
+			color: #000
+			font-weight: 700
+			&::before 
+				@extend %before 
+				height: 1px
+				width: 100%
+				background-color: #000
+				transform: scale(0)
+				@include trans 
+				bottom: -2px
+				left: 0
+			&:hover 
+				&::before 
+					transform: scale(1)
+
+.hamburger 
+	display: none
+	cursor: pointer
+	margin-top: 4px
+	&-box 
+		height: 15px
+	&-inner 
+		background-color: $orange 
+		&::before, &::after 
+			background-color: $orange 
