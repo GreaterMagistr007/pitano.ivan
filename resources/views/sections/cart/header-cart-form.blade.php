@@ -145,7 +145,7 @@ if($hourNow<10 || $hourNow>=22){$isWorkingTime=false;}
         <!-- <div class="order-toggler deactivate">Увидеть на карте</div> -->
         <div class="order-hidden order-map mb-15 deactivate">
             <div id="map" style="width: 100%;height: 140px;"></div>
-            <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&?apikey=3d29c5c5-814d-4a2b-882e-5be15f56ae22&onload=fid_33301333&coordorder=longlat"></script>
+{{--            <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&?apikey=3d29c5c5-814d-4a2b-882e-5be15f56ae22&onload=fid_33301333&coordorder=longlat"></script>--}}
             {{--                <script type="text/javascript" charset="utf-8" async--}}
             {{--                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ade1b9e280248ca00930d2d7e90027b518cab849d7627c390f38a2f10f2a9d485&amp;width=490&amp;height=140&amp;lang=ru_RU&amp;scroll=true"></script>--}}
 
