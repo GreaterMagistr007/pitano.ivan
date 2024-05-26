@@ -189,4 +189,4 @@
     .btn--orange::after{width: 90%!important;}
 </style>
 
-@include('sections.cart.cart-js')
+

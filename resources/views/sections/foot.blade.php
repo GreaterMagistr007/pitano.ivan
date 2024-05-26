@@ -290,6 +290,21 @@
     .btn-promo.success{display: none;}
 
 </style>
+
+
+
+
+
+
+
+@include('sections.cart.cart-js')
+
+
+
+
+
+
+
 <script>
 
 
