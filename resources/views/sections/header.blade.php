@@ -74,140 +74,53 @@
                     @endforelse
                 </select>
             </div>
-            <div class="header-cart__wrap">
-                <div class="header-cart">
-                    <img src="img/basket1.svg" alt="alt">
-                    <span class="header-cart__num"></span>
-                </div>
-                <div class="cart">
-                    <div class="cart-wrap">
-                        <div class="cart-head">
-                            <img src="img/basket.svg" alt="alt">
-                            <span>3 товара в корзине</span>
-                        </div>
-{{--                        <div class="cart-content">--}}
 
-                            <!-- <div class="cart-row">
-                                <div class="cart-item">
-                                    <div class="cart-item__image">
-                                        <img src="img/cart-1.png" alt="alt">
-                                    </div>
-                                    <div class="cart-item__content">
-                                        <div class="cart-item__head">пинза Пепперони с руккулой</div>
-                                        <div class="cart-item__content-bottom">
-                                            <div class="cart-nav">
-                                                <div class="quantity">
-                                                    <input type="number" min="1" max="9" step="1" value="1">
-                                                </div>
-                                            </div>
-                                            <div class="cart-item__price">490р.</div>
-                                            <div class="cart-item__delete"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cart-row">
-                                <div class="cart-item">
-                                    <div class="cart-item__image">
-                                        <img src="img/cart-2.png" alt="alt">
-                                    </div>
-                                    <div class="cart-item__content">
-                                        <div class="cart-item__head">кватро формаджио</div>
-                                        <div class="cart-item__content-bottom">
-                                            <div class="cart-nav">
-                                                <div class="quantity">
-                                                    <input type="number" min="1" max="9" step="1" value="1">
-                                                </div>
-                                            </div>
-                                            <div class="cart-item__price">460р.</div>
-                                            <div class="cart-item__delete"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cart-row">
-                                <div class="cart-item">
-                                    <div class="cart-item__image">
-                                        <img src="img/cart-2.png" alt="alt">
-                                    </div>
-                                    <div class="cart-item__content">
-                                        <div class="cart-item__head">кватро формаджио</div>
-                                        <div class="cart-item__content-bottom">
-                                            <div class="cart-nav">
-                                                <div class="quantity">
-                                                    <input type="number" min="1" max="9" step="1" value="1">
-                                                </div>
-                                            </div>
-                                            <div class="cart-item__price">460р.</div>
-                                            <div class="cart-item__delete"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="cart-row">
-                                <div class="cart-item">
-                                    <div class="cart-item__image">
-                                        <img src="img/cart-2.png" alt="alt">
-                                    </div>
-                                    <div class="cart-item__content">
-                                        <div class="cart-item__head">кватро формаджио</div>
-                                        <div class="cart-item__content-bottom">
-                                            <div class="cart-nav">
-                                                <div class="quantity">
-                                                    <input type="number" min="1" max="9" step="1" value="1">
-                                                </div>
-                                            </div>
-                                            <div class="cart-item__price">460р.</div>
-                                            <div class="cart-item__delete"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-{{--                        </div>--}}
-                        <div action="/" class="form form-small form-promo mb-15">
-                            <div class="form-cart__row">
-                                <input type="text" class="form-input magickWord" placeholder="Я знаю волшебное слово" min="10" max="10">
-                                <button class="btn-promo">
-                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                              d="M19.4594 7.8594C19.7503 7.38996 19.6056 6.77355 19.1362 6.48261L18.4116 6.03352C17.9422 5.74257 17.3257 5.88727 17.0348 6.3567L10.115 17.5217L3.06064 11.9442C2.6274 11.6017 1.99852 11.6752 1.65599 12.1084L1.12728 12.7771C0.784744 13.2104 0.858269 13.8392 1.2915 14.1818L9.28743 20.5037C9.32124 20.5314 9.35725 20.5572 9.39542 20.5809L10.12 21.03C10.5894 21.3209 11.2059 21.1762 11.4968 20.7068L19.4594 7.8594Z"
-                                              fill="#F15A29"/>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <form action="/" class="form form-cart">
-                            <div class="form-cart__content">
-                                <div class="form-cart__content-row">
-                                    <span>Всего товаров:</span>
-                                    <span class="bold">3</span>
-                                </div>
-                                <div class="form-cart__content-row">
-                                    <span>На сумму:</span>
-                                    <span class="bold">1410 р.</span>
-                                </div>
-								<!--
-                                <div class="form-cart__content-row ostatok">
-                                    <span>До заказа:</span>
-                                    <span class="bold summ"> р.</span>
-                                </div>
-								-->
-                            </div>
-                            <div class="form-row">
-                                <div class="btn btn--orange btn--order" onclick="ym(55182217, 'reachGoal', 'to-basket');gtag('event','click', { 'event_category' : 'to-basket'});">Заказать</div>
-                            </div>
-                            <div class="form__checkbox">
-                                <input type="checkbox" required checked id="policyCart">
-                                <label for="policyCart">Я согласен на <a href="/policy.pdf" target="_blank">обработку персональных данных</a></label>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+            @include('sections.cart.header-card-button')
 
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <?
 //    var_dump(date('H'));
     $hourNow = date('H');
@@ -586,6 +499,49 @@
             </div>
         </div>
     </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </header>
