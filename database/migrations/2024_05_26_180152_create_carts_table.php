@@ -15,6 +15,9 @@ class CreateCartsTable extends Migration
     {
         Schema::create('carts', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('default_title')
+                ->comment('Дефолное название корзины в админке')
+                ->default('Корзина для ресторана');
 
             /** Кнопка "Корзина" */
             $table->string('cart_button_inner_image')
