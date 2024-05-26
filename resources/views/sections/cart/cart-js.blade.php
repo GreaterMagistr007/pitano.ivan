@@ -699,6 +699,108 @@
     }
 </script>
 
+<script>
+    window.addEventListener('load',function(){
+        $('.productBlock .card__image img').on('click',function(){productClick(event.target);});
+        $('.productBlock .card__content .card__content-header').on('click',function(){productClick(event.target);});
+        $('.productBlock .card__content p').on('click',function(){productClick(event.target);});
+
+        $('.productBlock .card-main__item-image img').on('click',function(){productClick(event.target);});
+        $('.productBlock .card-main__item-content .card__content-header').on('click',function(){productClick(event.target);});
+        $('.productBlock .card-main__item-content p').on('click',function(){productClick(event.target);});
+
+        $('.addCartButton_cesar').on('click',function(){
+            event.preventDefault();
+            productClick(this,true);
+        });
+    });
+
+    function productClick(target,isCesar=false){
+        var thisProduct = getNeedleSelectorOfThisElAndParent(target,'.productBlock',10);
+        if(thisProduct.querySelector('.addCartButton_cesar')){isCesar=true;}
+        if(!getNeedleSelectorOfThisElAndParent(target,'header.header',17) && (window.innerWidth>768) || isCesar){
+            // var thisProduct = getNeedleSelectorOfThisElAndParent(target,'.productBlock',10);
+            var modal = document.querySelector('#priceModal');
+
+            if(thisProduct.querySelector('.productBlockModalImage')){
+                modal.querySelector('.productBlockImage').src = thisProduct.querySelector('.productBlockModalImage').src;
+            }else{
+                modal.querySelector('.productBlockImage').src = thisProduct.querySelector('.productBlockImage').src;
+            }
+
+            modal.querySelector('.productBlockTitle').innerHTML = thisProduct.querySelector('.productBlockTitle').innerHTML;
+            modal.querySelector('.productBlockPrice').innerHTML = thisProduct.querySelector('.productBlockPrice').innerHTML;
+
+            var cartContent = thisProduct.querySelector('.card__content p');
+            if(!cartContent){cartContent = thisProduct.querySelector('.card-main__item-content p');}
+
+            modal.querySelector('.productBlock .col-sm-4 p').innerHTML =cartContent.innerHTML;
+
+            modal.querySelector('.productBlock').setAttribute('data-id',thisProduct.getAttribute('data-id'));
+
+
+
+
+            if(isCesar){
+                $(modal.querySelector('.nonCesar')).hide();
+                $(modal.querySelector('.cesar_cart_block')).show();
+            }else{
+                $(modal.querySelector('.nonCesar')).show();
+                $(modal.querySelector('.cesar_cart_block')).hide();
+            }
+
+            //Покажем блок с изображением:
+            modal.querySelector('.productBlockImage').classList.remove('hidden');
+            //Удалим старые изображения, если они были:
+            // modal.querySelectorAll('.temp_image').forEach(function(el){el.remove();});
+            //Удалим старый слайдер, если он был:
+            modal.querySelectorAll('.slider_block').forEach(function(el){el.remove();});
+            //Если есть дополнительные изображения, то мутим слайдер:
+            let image_blocks = thisProduct.querySelectorAll('.card__slider_images');
+            let modal__image_block = modal.querySelector('.modal__image_block');
+            if(image_blocks.length){
+                //Скроем основное изображение:
+                modal.querySelector('.productBlockImage').classList.add('hidden');
+                //создадим слайдер-блок:
+                let slider_block = document.createElement('div');
+                slider_block.classList.add('slider_block');
+                modal__image_block.appendChild(slider_block);
+
+                image_blocks.forEach(function(el){
+                    let image = document.createElement('img');
+                    image.src = el.getAttribute('data_slider_image');
+                    image.classList.add('temp_image');
+                    slider_block.appendChild(image);
+                });
+
+                $(slider_block).slick({
+                    rows: false,
+                    arrows: false,
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                    speed: 1000,
+                    pauseOnHover: false,
+                })
+            }
+
+
+
+            // console.log(thisProduct);
+            //метрика:
+            ym(55182217, 'reachGoal', 'open-cart');gtag('event','click', { 'event_category' : 'open-cart'});
+            ///метрика
+            document.querySelector('#openPriceModal').click();
+        }
+    }
+
+    function setCesar(id,title,price){
+        var modal = document.querySelector('#priceModal');
+        modal.querySelector('.productBlockTitle').innerHTML='Цезарь '+title;
+        modal.querySelector('.productBlock').setAttribute('data-id','salat_6_cesar_'+id);
+        modal.querySelector('.productBlockPrice').innerHTML = price;
+        modal.querySelector('.mfp-close').click();
+    }
+</script>
 
 <script>
 

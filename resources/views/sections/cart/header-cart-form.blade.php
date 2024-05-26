@@ -345,4 +345,14 @@ if($hourNow<10 || $hourNow>=22){$isWorkingTime=false;}
         text-align: center;
         padding: 10px;
     }
+
+    @media only screen and (min-width: 768px){
+        .productBlock .card__image img{cursor: pointer;}
+        .productBlock .card__content .card__content-header{cursor: pointer;}
+        .productBlock .card__content p{cursor: pointer;}
+
+        .productBlock .card-main__item-image img{cursor: pointer;}
+        .productBlock .card-main__item-content .card__content-header{cursor: pointer;}
+        .productBlock .card-main__item-content p{cursor: pointer;}
+    }
 </style>
