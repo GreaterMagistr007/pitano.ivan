@@ -173,36 +173,7 @@
 
 
 
-    .cart-row.productBlock .cart-item .cart-item__content .cart-item__content-bottom .cart-item__price .productBlockPrice{
-        font-weight: 600;
-        font-size: 15px;
-        color: black;
-    }
-    .cart-row.productBlock .cart-item .cart-item__content .cart-item__content-bottom{
-        width: 50%;
-    }
-    .cart-row.productBlock .cart-item .cart-item__content .productBlockTitle{
-        width: 50%;
-        font-weight: 600;
-        font-size: 15px;
-        color: black;
-    }
-    .cart-row.productBlock .cart-item .cart-item__content{
-        display: flex;
-        width: 100%;
-    }
 
-    .not_working{display: none;}
-    .notWorkingNow_new .not_working{display: block;}
-    .not_working p{
-        width: 80%;
-        background: #f15a29;
-        color: white;
-        margin: 0 auto;
-        margin-bottom: 15px;
-        text-align: center;
-        padding: 10px;
-    }
 
     .unselectable {
         -moz-user-select: none;
