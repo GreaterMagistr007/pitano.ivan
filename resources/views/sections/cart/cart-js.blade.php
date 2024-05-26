@@ -46,4 +46,36 @@
             }
         });
     });
+
+
+
+
+    document.querySelector('.closeCart').addEventListener('click',function(el){
+        hideCart();
+    });
+
+    //отловим событие нажатия клавиши на инпуте. Надо исключить "8"
+    function checkFirstChar8(key,elem){
+        if(key=='8' && elem.value.length==0){
+            elem.value = '+7 (';
+            return false;
+        }
+    }
+
+    document.querySelectorAll('.delivery_checkbox').forEach(function(elem){
+        elem.addEventListener('click',function(){
+            document.querySelectorAll('.delivery_checkbox.active').forEach(function(el){el.classList.remove('active')});
+            this.classList.add('active');
+            document.querySelector('input#pickup_place').value = this.getAttribute('value');
+        });
+    });
+
+    function setActivePaymentMethod(payment_choose_div){
+        console.log(event);
+        document.querySelectorAll('.payment .payment-row .payment-choose input').forEach(function(elem){
+            elem.removeAttribute('checked');
+        });
+        console.log(payment_choose_div);
+        payment_choose_div.querySelector('input').setAttribute('checked',true);
+    }
 </script>

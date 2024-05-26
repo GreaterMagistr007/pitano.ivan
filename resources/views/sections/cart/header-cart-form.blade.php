@@ -10,11 +10,6 @@ if($hourNow<10 || $hourNow>=22){$isWorkingTime=false;}
 
     </button>
 
-    <script>
-        document.querySelector('.closeCart').addEventListener('click',function(el){
-            hideCart();
-        });
-    </script>
     <input type="text" id="DeliveryOrSam" name="Доставка или самовывоз" hidden value="Доставка" style="display: none;">
     <div class="order-scroll">
 
@@ -106,16 +101,6 @@ if($hourNow<10 || $hourNow>=22){$isWorkingTime=false;}
                 <div class="col-sm-6 mb-15">
                     <label for="order-phone" class="form-small__label">Телефон*</label>
                     <input name="Телефон" onkeydown="return checkFirstChar8(event.key,this);" required type="text" id="order-phone" class="form__phone" minlength="11">
-                    <script>
-                        //отловим событие нажатия клавиши на инпуте. Надо исключить "8"
-                        function checkFirstChar8(key,elem){
-                            if(key=='8' && elem.value.length==0){
-                                elem.value = '+7 (';
-                                return false;
-                            }
-                        }
-
-                    </script>
                 </div>
                 <div class="order-row deactivate hidden" style="width: 100%;">
                     <div class="row pl-0 ml-0" style="justify-content: space-between;width: 100%;">
@@ -140,15 +125,6 @@ if($hourNow<10 || $hourNow>=22){$isWorkingTime=false;}
                             <label style="cursor: pointer; width: 100%"><b>130 квартал</b> 3 июля, 9 <b><a href="tel:+7(3952)506484">+7(3952)506-484</a></b></label>
                         </div>
                     </div>
-                    <script>
-                        document.querySelectorAll('.delivery_checkbox').forEach(function(elem){
-                            elem.addEventListener('click',function(){
-                                document.querySelectorAll('.delivery_checkbox.active').forEach(function(el){el.classList.remove('active')});
-                                this.classList.add('active');
-                                document.querySelector('input#pickup_place').value = this.getAttribute('value');
-                            });
-                        });
-                    </script>
                 </div>
                 {{--                    <div class="col-sm-12 mb-15 deactivate hidden">--}}
                 {{--                        <label for="order-street" class="form-small__label">Откуда забирать</label>--}}
@@ -221,22 +197,6 @@ if($hourNow<10 || $hourNow>=22){$isWorkingTime=false;}
                     <input type="radio" id="card" name="Оплата" value="Картой на сайте">
                     <label>Картой на сайте</label>
                 </div>
-                <script>
-                    // document.querySelectorAll('.payment .payment-row .payment-choose').forEach(function(el){
-                    //     el.addEventListener('click',function(){
-                    //         setActivePaymentMethod(this);
-                    //     });
-                    // });
-
-                    function setActivePaymentMethod(payment_choose_div){
-                        console.log(event);
-                        document.querySelectorAll('.payment .payment-row .payment-choose input').forEach(function(elem){
-                            elem.removeAttribute('checked');
-                        });
-                        console.log(payment_choose_div);
-                        payment_choose_div.querySelector('input').setAttribute('checked',true);
-                    }
-                </script>
                 {{--                    <div class="payment-choose">--}}
                 {{--                        <input type="radio" id="card" name="Оплата" value="Картой на сайте">--}}
                 {{--                        <label for="card">Картой на сайте</label>--}}
