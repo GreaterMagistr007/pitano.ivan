@@ -3,9 +3,12 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class Restaurant extends Model
 {
+    const TABLE = 'restaurants';
+
     protected $hidden = ['created_at', 'updated_at'];
     protected $fillable = [ 'name', 'tag' ];
 
@@ -52,5 +55,14 @@ class Restaurant extends Model
     public function order(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
     {
         return $this->belongsToMany(Order::class);
+    }
+
+    /**
+     * Возвращает количество записей в таблице
+     * @return int
+     */
+    public static function getCount()
+    {
+        return DB::table(self::TABLE)->count();
     }
 }
