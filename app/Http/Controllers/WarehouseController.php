@@ -15,7 +15,7 @@ class WarehouseController extends Controller
 
     public function edit($id)
     {
-        Restaurant::set($id);
+        Restaurant::setActive($id);
 //        session()->forget('warehouse');
 //        Session::put('warehouse', $id);
 

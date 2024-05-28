@@ -71,7 +71,7 @@ class Restaurant extends Model
      * @param $id
      * @return int
      */
-    public static function set($id)
+    public static function setActive($id)
     {
         $id = (int)$id;
         $item = self::find($id);
@@ -84,5 +84,10 @@ class Restaurant extends Model
         Session::put('warehouse', $item->id);
 
         return $id;
+    }
+
+    public static function getActiveId()
+    {
+        return Session::get('warehouse');
     }
 }
