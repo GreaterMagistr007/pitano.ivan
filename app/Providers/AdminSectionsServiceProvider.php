@@ -12,6 +12,7 @@ class AdminSectionsServiceProvider extends ServiceProvider
      */
     protected $sections = [
         \App\Restaurant::class => 'App\Http\Sections\Restuarant',
+        \App\Cart::class => 'App\Http\Sections\Carts',
         //\App\User::class => 'App\Http\Sections\Users',
         \App\Contacts::class => 'App\Http\Sections\Contacts',
         \App\Description::class => 'App\Http\Sections\Description',

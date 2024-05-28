@@ -249,6 +249,7 @@ class MainSettingsController extends Controller
 
     function message_to_telegram($text)
     {
+        return;
         // сюда нужно вписать токен вашего бота
         $TELEGRAM_TOKEN = '1089211119:AAHYxIhP3em5bL3RmIGC9l9WqFJmjEkriCE';
 
@@ -273,6 +274,7 @@ class MainSettingsController extends Controller
     }
 
     function mail($newRequest,$text=null,$email=null){
+        return;
         $to      = MainSettings::get()[0]->mail;
 
         if(isset($email) && strlen($email)>0){$to=$email;}
@@ -301,6 +303,7 @@ class MainSettingsController extends Controller
     }
 
     function smsc_api($phone,$text){
+        return;
         include_once "smsc_api.php";
         $phone = preg_replace('~[^0-9]+~','',$phone);
 //        dd($phone,$text);
@@ -387,7 +390,6 @@ class MainSettingsController extends Controller
 
 //        dd(json_decode($res));
         $result = json_decode($res);
-       // dd($result);
         if(isset($result->orderId) && $result->orderId && strlen($result->orderId)>0){
             Order::where('id',$order_id)->update(['bank_orderId'=>$result->orderId]);
             if(isset($result->formUrl) && $result->formUrl && strlen($result->formUrl)>0){

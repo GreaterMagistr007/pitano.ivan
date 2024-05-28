@@ -388,5 +388,6 @@
     }
 </style>
 
+@include('sections.cart.cart-js-class')
 </body>
 </html>
