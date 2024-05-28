@@ -62,8 +62,17 @@ class CreateCartsTable extends Migration
 
             /** Блок товаров */
             $table->string('product_block_font_color')
-                ->comment('Цвет шрифта блока товаров товаров')
+                ->comment('Цвет шрифта товаров товаров')
                 ->default('black');
+            $table->string('product_block_quantity_border_color')
+                ->comment('Цвет рамки количества товара')
+                ->default('#f15a29');
+            $table->string('product_block_minus_button')
+                ->comment('Кнопка уменьшения количества товара')
+                ->default('/img/minus.svg');
+            $table->string('product_block_plus_button')
+                ->comment('Кнопка увеличения количества товара')
+                ->default('/img/plus.svg');
 
             /** Блок способа доставки / самовывоза */
             $table->string('tab_font_color')
