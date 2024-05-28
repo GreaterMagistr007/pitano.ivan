@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Session;
 
 class Restaurant extends Model
 {
@@ -64,5 +65,24 @@ class Restaurant extends Model
     public static function getCount()
     {
         return DB::table(self::TABLE)->count();
+    }
+
+    /**
+     * @param $id
+     * @return int
+     */
+    public static function set($id)
+    {
+        $id = (int)$id;
+        $item = self::find($id);
+
+        if (!$item) {
+            $item = self::first();
+        }
+
+        session()->forget('warehouse');
+        Session::put('warehouse', $item->id);
+
+        return $id;
     }
 }
