@@ -108,7 +108,6 @@ class Carts extends Section implements Initializable
 
                         /** Блок товаров */
                         ->addColumn([
-//                            row_title('Блок товаров'),
                             \AdminFormElement::text('product_block_font_color', 'Цвет шрифта блока товаров товаров')
                                 ->setDefaultValue('#000')
                                 ->setHtmlAttribute('type', 'color'),
@@ -194,35 +193,6 @@ class Carts extends Section implements Initializable
                                 ->setDefaultValue('#fff')
                                 ->setHtmlAttribute('type', 'color'),
                         ], 4)
-
-
-
-//                        ->addColumn([
-//                            /** Блок способа доставки / самовывоза */
-//                            row_title('Блок способа доставки / самовывоза'),
-//                            \AdminFormElement::text('tab_font_color', 'Цвет шрифта вкладок')
-//                                ->setDefaultValue('#000')
-//                                ->setHtmlAttribute('type', 'color'),
-//                            \AdminFormElement::text('field_title_font_color', 'Цвет шрифта названий полей')
-//                                ->setDefaultValue('#000')
-//                                ->setHtmlAttribute('type', 'color'),
-
-//                            /** Блок десерта */
-//                            row_title('Блок десерта'),
-//                            \AdminFormElement::number('desert_block_product_count', 'Количество отображаемых десертов в блоке десерта')
-//                                ->setDefaultValue(1),
-//                            \AdminFormElement::text('desert_block_product_title_font_color', 'Цвет шрифта названия десерта')
-//                                ->setDefaultValue('#000')
-//                                ->setHtmlAttribute('type', 'color'),
-//                            \AdminFormElement::text('desert_block_product_description_font_color', 'Цвет шрифта описания десерта')
-//                                ->setDefaultValue('#000')
-//                                ->setHtmlAttribute('type', 'color'),
-//                            \AdminFormElement::text('desert_block_product_price_font_color', 'Цвет шрифта цены десерта')
-//                                ->setDefaultValue('#fff')
-//                                ->setHtmlAttribute('type', 'color'),
-//                            \AdminFormElement::image('desert_block_product_price_background_image', 'Изображение заднего фона цены десерта')
-//                                ->setDefaultValue('/img/price-bg.svg'),
-//                        ], 12)
                 ]
             );
         return $form;
