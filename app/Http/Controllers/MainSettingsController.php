@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Cart;
 use App\Hot;
 use App\Makaron;
 use App\Restaurant;
@@ -27,6 +28,9 @@ class MainSettingsController extends Controller
 {
     function index($view='index',Request $request) {
         $warehouseChosen = Session::get('warehouse') ;
+
+        // Сгенерируем нужное количество корзин, если их было мало
+        Cart::generateCards();
 
         $modules=[];
         $modules = self::get_products_modules($modules, $warehouseChosen);
