@@ -297,7 +297,7 @@
 
 
 
-@include('sections.cart.cart-js')
+
 
 
 
@@ -389,5 +389,6 @@
 </style>
 
 @include('sections.cart.cart-js-class')
+@include('sections.cart.cart-js')
 </body>
 </html>

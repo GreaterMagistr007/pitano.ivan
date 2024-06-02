@@ -46,11 +46,6 @@
                 .catch(error => console.error(error));
         }
 
-        async addProduct(category, id, count = 1)
-        {
-
-        }
-
         getProductBlock(productId)
         {
             return this.cartFrom.productCartProductsBlock.getProductBlockByProductId(productId);
@@ -74,4 +69,13 @@
     }
 
     let cart = new ProductCart();
+
+    //Создадим элемент в родителе
+    function create_element(tag,parent,append=true){
+        let elem = document.createElement(tag);
+
+        if(append){parent.appendChild(elem);}
+        else{parent.insertBefore(elem,parent.children[0]);}
+        return elem;
+    }
 </script>

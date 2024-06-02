@@ -7,96 +7,60 @@
 
         constructor(productBlockElement) {
             this.productBlockElement = productBlockElement;
-        }
-
-        setProducts(products)
-        {
-            this.deleteProducts();
-            for (let i in products) {
-
-                this.products.push(products[i])
-            }
-        }
-
-        getProducts()
-        {
-            let hasChanges = false;
-
-            // Проверим на наличие удаленных продуктов
-            for (let i in this.products) {
-                try {
-                    if (!this.products[i].getCount() || this.products[i].isDeleted) {
-                        hasChanges = true;
-                    }
-                } catch (e) {
-                    this.products[i].isDeleted = true;
-                    hasChanges = true;
-                }
-            }
-
-            // Есть изменения. Пересоберем массив продуктов:
-            if (hasChanges) {
-                let newProductsArr = [];
-                for (let i in this.products) {
-                    if (!this.products[i].isDeleted) {
-                        newProductsArr.push(this.products[i]);
-                    }
-                }
-
-                this.products = newProductsArr;
-            }
-
-            return this.products;
-        }
-
-        deleteProducts()
-        {
-            for (let i in this.products) {
-                this.products[i].deleteProduct();
-            }
-
-            this.products = [];
-        }
-
-        deleteProduct(id)
-        {
-            id = parseInt(id);
-            let products = this.getProducts();
-            for (let i in products) {
-                if (parseInt(products[i].id) === id) {
-                    products[i].deleteProduct();
-                }
-            }
-
-            this.getProducts();
+            this.loadProductsFromLocalStorage();
         }
 
         setSettings(settings) {
             console.log('Устанавливаем настройки ProductCartProductsBlock');
             this.settings = settings;
 
-            let products = this.getProducts();
-            for (let i in products) {
-                products[i].render();
-            }
+            // let products = this.getProducts();
+            // for (let i in products) {
+            //     products[i].render();
+            // }
         }
 
-        deleteProductFromCart(id)
+        loadProductsFromLocalStorage()
         {
+            if (localStorage.getItem('Cart')) {
+                this.clearProductBlock();
+                let products = JSON.parse(localStorage.getItem('Cart'));
 
-        }
+                this.products = [];
+                for (let id in products) {
+                    this.products.push(
+                        new ProductCartProductsBlockProduct(
+                            id,
+                            products[id].title,
+                            products[id].image,
+                            products[id].count,
+                            products[id].price,
+                            this
+                        )
+                    )
+                }
 
-        getProductBlockByProductId(productId)
-        {
-            console.log('this.products:', this.products);
-            console.log('productId:', productId);
-            for (let i in (this.products)) {
-                if (this.products[i].id === productId) {
-                    return this.products[i];
+                console.log(this.products);
+
+                for (let i in this.products) {
+                    this.products[i].render();
                 }
             }
+        }
 
-            return null;
+        getProductBlock()
+        {
+            let cartContent = document.querySelector('#mCSB_2_container');
+            if(!cartContent){
+                cartContent =document.querySelector('.cart-content')
+            }
+
+            return cartContent;
+        }
+
+        clearProductBlock()
+        {
+            this.getProductBlock().innerHTML = '';
         }
     }
 
@@ -189,44 +153,78 @@
             return defaultValue;
         }
 
+        getBlock()
+        {
+            if (!this.block) {
+                this.block = this.productBlock.productBlockElement.querySelector(`.productBlock[data-id="${this.id}"]`);
+            }
+
+            return this.block;
+        }
+
+        getCountInput()
+        {
+            if (!this.countInput) {
+                this.countInput = this.getBlock().querySelector('.cartProductBlockProductCountInput');
+            }
+
+            return this.countInput;
+        }
+
         render() {
+            console.log('Рендерим продукт');
+            console.log(this);
+
+
             this.deleteBlock();
             if (!this.getCount()) {
+                console.log('!this.getCount()');
                 return;
             }
             if (this.isDeleted) {
+                console.log('this.isDeleted');
                 return;
             }
 
+            this.block = create_element('div', this.productBlock.getProductBlock());
+            this.block.classList.add('cart-row','productBlock');
+            this.block.setAttribute('data-id', this.id);
+
             let template = `
-                <div class="cart-row productBlock" data-id="${this.id}">
-                    <div class="cart-item">
-                        <div class="cart-item__image">
-                            <img src="${this.image}" alt="alt" class="mCS_img_loaded productBlockImage">
-                        </div>
-                        <div class="cart-item__content">
-                            <div class="cart-item__head productBlockTitle" style="color: ${this.getProductFontColor()};">${this.title}</div>
-                            <div class="cart-item__content-bottom">
-                                <div class="cart-nav">
-                                    <div class="quantity">
-                                        <input class="cartProductBlockProductCountInput" type="number" min="1" max="9" step="1" value="${this.count}" style="border-color: ${this.getQuantityBorderColor()};">
-                                        <div class="quantity-nav">
-                                            <div class="quantity-button quantity-up cartPlus" style="background: url(${this.getPlusButtonImage()}) no-repeat center center;"></div>
-                                            <div class="quantity-button quantity-down cartMinus" style="background: url(${this.getMinusButtonImage()}) no-repeat center center;"></div>
-                                        </div>
+                <div class="cart-item">
+                    <div class="cart-item__image">
+                        <img src="${this.image}" alt="alt" class="mCS_img_loaded productBlockImage">
+                    </div>
+                    <div class="cart-item__content">
+                        <div class="cart-item__head productBlockTitle" style="color: ${this.getProductFontColor()};">${this.title}</div>
+                        <div class="cart-item__content-bottom">
+                            <div class="cart-nav">
+                                <div class="quantity">
+                                    <input class="cartProductBlockProductCountInput" type="number" min="1" max="9" step="1" value="${this.count}" style="border-color: ${this.getQuantityBorderColor()};">
+                                    <div class="quantity-nav">
+                                        <div class="quantity-button quantity-up cartPlus" style="background: url(${this.getPlusButtonImage()}) no-repeat center center;"></div>
+                                        <div class="quantity-button quantity-down cartMinus" style="background: url(${this.getMinusButtonImage()}) no-repeat center center;"></div>
                                     </div>
                                 </div>
-                                <div class="cart-item__price productBlockPrice">${this.price}р.</div>
-                                <div class="cart-item__delete" onclick="deleteFromCart('${this.id}');"></div>
                             </div>
+                            <div class="cart-item__price productBlockPrice">${this.price}р.</div>
+                            <div class="cart-item__delete" onclick="deleteFromCart('${this.id}');"></div>
                         </div>
                     </div>
                 </div>
             `;
-            this.productBlock.productBlockElement.innerHTML += template;
 
-            this.block = this.productBlock.productBlockElement.querySelector(`.productBlock[data-id="${this.id}"]`);
-            this.countInput = this.block.querySelector(`.cartProductBlockProductCountInput`);
+            this.block.innerHTML = template;
+
+            // this.productBlock.getProductBlock().innerHTML += template;
+
+            console.log('this.productBlock.productBlockElement:');
+            console.log(this.productBlock.productBlockElement);
+
+            // this.block = this.productBlock.productBlockElement.querySelector(`.productBlock[data-id="${this.id}"]`);
+            // this.countInput = this.getBlock().querySelector(`.cartProductBlockProductCountInput`);
+
+            console.log('this.block:', this.getBlock());
 
             this.setListeners();
         }
@@ -235,17 +233,17 @@
         {
             let self = this;
 
-            this.countInput.addEventListener('change', function(e){
+            this.getCountInput().addEventListener('change', function(e){
                 self.countInputChange();
             });
 
-            this.block.querySelectorAll('.cartPlus').forEach(function(el){
+            this.getBlock().querySelectorAll('.cartPlus').forEach(function(el){
                 el.addEventListener('click', function(e){
                     self.plusButtonClick();
                 });
             });
 
-            this.block.querySelectorAll('.cartMinus').forEach(function(el){
+            this.getBlock().querySelectorAll('.cartMinus').forEach(function(el){
                 el.addEventListener('click', function(e){
                     self.minusButtonClick();
                 });

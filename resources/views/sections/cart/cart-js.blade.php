@@ -576,6 +576,10 @@
     }
 
     function repaintCart(){
+
+        console.log('перерисовка корзины');
+        console.log(cart);
+
         //Поменяем текст на кнопках товара:
         set_button_title_for_products_in_cart();
 
