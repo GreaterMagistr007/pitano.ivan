@@ -6,7 +6,7 @@
         apuUrl = '/cart';
 
         settings;
-        products;
+        // products = [];
 
         // html сущности
         cartButton; // кнопка корзины вверху сайта
@@ -39,9 +39,9 @@
                     if (data.settings) {
                         self.setSettings(data.settings)
                     }
-                    if (data.products) {
-                        self.setProducts(data.products)
-                    }
+                    // if (data.products) {
+                    //     self.setProducts(data.products)
+                    // }
                 })
                 .catch(error => console.error(error));
         }
@@ -53,7 +53,6 @@
 
         getProductBlock(productId)
         {
-            productId = parseInt(productId);
             return this.cartFrom.productCartProductsBlock.getProductBlockByProductId(productId);
         }
 
@@ -71,40 +70,6 @@
             }
             console.log('Установка settings:');
             console.log(settings);
-        }
-
-        setProducts(products)
-        {
-            for (let i in products) {
-                if (products[i].id) {
-                    let title = (title in products[i]) ? products[i].title : null;
-                    let image = (image in products[i]) ? products[i].image : null;
-                    let count = (count in products[i]) ? products[i].count : 0;
-                    let price = (price in products[i]) ? products[i].price : null;
-
-                    this.products.push(
-                        new CartProduct(products[i].id, title, image, count, price, this)
-                    );
-                }
-            }
-
-            console.log('Установка продуктов:');
-            console.log(this.products);
-        }
-
-        post()
-        {
-
-        }
-
-        loadLocalStorageProducts()
-        {
-
-        }
-
-        loadSessionProducts()
-        {
-
         }
     }
 

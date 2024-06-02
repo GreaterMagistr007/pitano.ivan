@@ -88,7 +88,8 @@
 
         getProductBlockByProductId(productId)
         {
-            productId = parseInt(productId);
+            console.log('this.products:', this.products);
+            console.log('productId:', productId);
             for (let i in (this.products)) {
                 if (this.products[i].id === productId) {
                     return this.products[i];
@@ -315,16 +316,20 @@
 
         isDeleted = false;
 
-        constructor(id, title, image, count, price, cart) {
+        constructor(id, count, title, image, price, cart) {
+            console.log('новый товар');
             this.id = id;
             this.title = title;
             this.image = image;
             this.count = count;
             this.price = price;
+            this.cart = cart;
 
             if (!title || !image || !price) {
-                this.fetchData()
+                this.fetchDataById()
             }
+
+            console.log('новый товар');
         }
 
         fetchDataById()
@@ -349,6 +354,8 @@
             if (!this.productBlock) {
                 this.productBlock = this.cart.getProductBlock(this.id);
             }
+
+            console.log('this.productBlock:', this.productBlock);
 
             return this.productBlock;
         }
