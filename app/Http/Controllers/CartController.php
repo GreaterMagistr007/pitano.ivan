@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Cart;
+use App\Pasta;
 use App\Restaurant;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
@@ -46,5 +47,27 @@ class CartController extends Controller
         ];
 
         return $result;
+    }
+
+
+
+    public function getProductData($id)
+    {
+        $error = ['error' => 'Product with id "' . $id . '" not found'];
+        $productModel = Cart::getModelByProductId($id);
+
+        if (!$productModel) {
+            return $error;
+        }
+
+        $productModel = '\App\\' . $productModel;
+
+        $product = $productModel::where('product_id', $id)->get();
+
+        if (!$product) {
+            return $error;
+        }
+
+        return $product;
     }
 }

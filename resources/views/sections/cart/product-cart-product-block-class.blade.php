@@ -85,6 +85,18 @@
         {
 
         }
+
+        getProductBlockByProductId(productId)
+        {
+            productId = parseInt(productId);
+            for (let i in (this.products)) {
+                if (this.products[i].id === productId) {
+                    return this.products[i];
+                }
+            }
+
+            return null;
+        }
     }
 
     class ProductCartProductsBlockProduct {
@@ -290,7 +302,7 @@
         }
     }
 
-    class cartProduct
+    class CartProduct
     {
         id;
         title;
@@ -299,20 +311,57 @@
         price;
         productBlock;
 
+        cart;
+
         isDeleted = false;
 
-        constructor(id, cart) {
+        constructor(id, title, image, count, price, cart) {
+            this.id = id;
+            this.title = title;
+            this.image = image;
+            this.count = count;
+            this.price = price;
 
+            if (!title || !image || !price) {
+                this.fetchData()
+            }
         }
 
-        fetchData()
+        fetchDataById()
         {
+            let self = this;
             fetch(`{!! route('getProductData') !!}/${this.id}`)
                 .then(response => response.json())
                 .then(function(data) {
+                    console.log('Получили продукт ' + self.id)
                     console.log(data)
+                    if (data.error) {
+                        return console.error(data.error);
+                    }
+
+                    self.render();
                 })
                 .catch(error => console.error(error));
         }
+
+        getBlock()
+        {
+            if (!this.productBlock) {
+                this.productBlock = this.cart.getProductBlock(this.id);
+            }
+
+            return this.productBlock;
+        }
+
+        delete()
+        {
+
+        }
+
+        render()
+        {
+            this.getBlock().render();
+        }
     }
+
 </script>

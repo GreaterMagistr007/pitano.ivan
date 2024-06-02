@@ -9,6 +9,17 @@ class Cart extends Model
 {
     const TABLE = 'carts';
 
+    const MODEL_ID = [
+        'Pinza' => 'pinzas',
+        'Salat' => 'salats',
+        'Soup' => 'soups',
+        'Sets' => 'sets',
+        'Pasta' => 'pastas',
+        'Makaron' => 'makarons',
+        'Hot' => 'hots',
+        'Dessert' => 'desserts',
+    ];
+
     /**
      * Возвращает количество записей в таблице
      * @return int
@@ -30,5 +41,37 @@ class Cart extends Model
             $item = new self([]);
             $item->save();
         }
+    }
+
+    /**
+     * Возвращает название модели по id продукта
+     * @param $productId
+     * @return string|null
+     */
+    public static function getModelByProductId($productId = '')
+    {
+        if (!is_string($productId) || !strlen($productId)) {
+            return null;
+        }
+
+        try {
+            // костылизируем неправильно названные ID товаров
+            $productId = substr(substr($productId, 0, strpos($productId, "_")), 0, -1);
+        }catch (\Exception $e) {
+            return null;
+        }
+
+//        dump($productId);
+
+        foreach (self::MODEL_ID as $model => $id) {
+//            dump('$model:' . $model);
+//            dump('$id:' . $id);
+//            dump(strripos($id, $productId) !== false);
+            if (strripos($id, $productId) !== false) {
+                return $model;
+            }
+        }
+
+        return null;
     }
 }

@@ -51,6 +51,12 @@
 
         }
 
+        getProductBlock(productId)
+        {
+            productId = parseInt(productId);
+            return this.cartFrom.productCartProductsBlock.getProductBlockByProductId(productId);
+        }
+
         setSettings(settings)
         {
             this.settings = settings;
@@ -71,14 +77,19 @@
         {
             for (let i in products) {
                 if (products[i].id) {
-                    // let
+                    let title = (title in products[i]) ? products[i].title : null;
+                    let image = (image in products[i]) ? products[i].image : null;
+                    let count = (count in products[i]) ? products[i].count : 0;
+                    let price = (price in products[i]) ? products[i].price : null;
+
+                    this.products.push(
+                        new CartProduct(products[i].id, title, image, count, price, this)
+                    );
                 }
             }
 
-
-            this.products = products
             console.log('Установка продуктов:');
-            console.log(products);
+            console.log(this.products);
         }
 
         post()
