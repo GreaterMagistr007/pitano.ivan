@@ -5,7 +5,7 @@ $isWorkingTime = true;
 if($hourNow<10 || $hourNow>=22){$isWorkingTime=false;}
 ?>
 
-<form action="/" class="order form form-small <?if(!$isWorkingTime)echo('notWorkingNow_new');?>">
+<form action="/" id="cartForm" class="order form form-small <?if(!$isWorkingTime)echo('notWorkingNow_new');?>">
     <button class="closeCart">
 
     </button>
@@ -155,6 +155,7 @@ if($hourNow<10 || $hourNow>=22){$isWorkingTime=false;}
             <input name="Комментарий" type="text" id="order-comment">
         </div>
         <!-- блок десерта -->
+        @if($Dessert && count($Dessert))
         <?
         $CartDesert = ($Dessert[rand(0,count($Dessert)-1)]);
         ?>
@@ -180,6 +181,7 @@ if($hourNow<10 || $hourNow>=22){$isWorkingTime=false;}
 
         </div>
         <!-- /блок десерта -->
+        @endif
         <div class="payment" style="">
             <div class="order-head deactivate" style="max-width: 40%;float: left;">Оплата:</div>
             <div class="deactivate" style="max-width: 40%;position: absolute;right: 0; padding-right: 10px;"><img src="/img/payIcons.png"></div>
