@@ -7,6 +7,7 @@ Route::get('/feed', "FeedController@index");
 
 /** Корзина */
 Route::get('/cart', "CartController@index")->name('getCart');
+Route::get('/cart/{id?}', "CartController@getProductData")->name('getProductData');
 
 /** Склады */
 Route::get('/warehouse', "WarehouseController@index")->name('warehouse');

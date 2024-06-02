@@ -36,11 +36,11 @@
                 .then(response => response.json())
                 .then(function(data) {
                     console.log(data)
-                    if (data.products) {
-                        self.setProducts(data.products)
-                    }
                     if (data.settings) {
                         self.setSettings(data.settings)
+                    }
+                    if (data.products) {
+                        self.setProducts(data.products)
                     }
                 })
                 .catch(error => console.error(error));
@@ -69,6 +69,13 @@
 
         setProducts(products)
         {
+            for (let i in products) {
+                if (products[i].id) {
+                    // let
+                }
+            }
+
+
             this.products = products
             console.log('Установка продуктов:');
             console.log(products);

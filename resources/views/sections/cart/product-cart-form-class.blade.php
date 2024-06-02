@@ -3,18 +3,18 @@
     class ProductCartForm
     {
         productCartFormElement;
-        productCartProductBlock;
-        productCartProductBlockSelector = '#productCartProductBlock';
+        productCartProductsBlock;
+        productCartProductsBlockSelector = '#productCartProductsBlock';
 
         constructor(selector)
         {
             this.productCartFormElement = document.querySelector(selector);
-            this.productCartProductBlock = new ProductCartProductBlock(this.findElement(this.productCartProductBlockSelector));
+            this.productCartProductsBlock = new ProductCartProductsBlock(this.findElement(this.productCartProductsBlockSelector));
         }
 
         setSettings(settings = {})
         {
-            this.productCartProductBlock.setSettings(settings);
+            this.productCartProductsBlock.setSettings(settings);
             for (let key in settings) {
                 let value = settings[key];
 
