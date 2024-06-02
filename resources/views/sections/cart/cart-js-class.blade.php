@@ -56,6 +56,7 @@
             this.settings = settings;
 
             this.cartButton.setSettings(settings);
+            this.cartFrom.setSettings(settings);
 
             for (let key in this.settings) {
                 switch (key) {

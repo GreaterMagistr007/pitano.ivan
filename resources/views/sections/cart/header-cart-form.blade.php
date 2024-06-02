@@ -14,7 +14,7 @@ if($hourNow<10 || $hourNow>=22){$isWorkingTime=false;}
     <div class="order-scroll">
 
         <div class="order-toggler cartToogler">Корзина</div>
-        <div class="order-cart cart-content order-hidden" style="display: block"></div>
+        <div id="productCartProductBlock" class="order-cart cart-content order-hidden" style="display: block"></div>
         <!-- <div class="order-cart order-hidden">
             <div class="order-cart__row">
                 <div class="cart-item__image">
