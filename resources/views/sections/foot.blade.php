@@ -1451,5 +1451,6 @@ let zone_800_coordinates = [
 
 <script src="//cdn.callibri.ru/callibri.js" type="text/javascript" charset="utf-8"></script>
 
+@include('sections.cart-settings')
 </body>
 </html>

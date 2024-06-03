@@ -503,36 +503,49 @@
             </div>
             <!-- блок десерта -->
             <?
-            $CartDesert = ($Dessert[rand(0,count($Dessert)-1)]);
+//            $CartDesert = ($Dessert[rand(0,count($Dessert)-1)]);
+
+            // Сгенерируем случайный массив из нужного количества десертов
+            $cartDesserts = [];
+            while (count($cartDesserts) < $Cart->desert_block_product_count) {
+                $index = rand(0, count($Dessert) - 1);
+                if (!in_array($index, $cartDesserts)) {
+                    $cartDesserts[] = $index;
+                }
+            }
+
             ?>
             <div class="order-toggler">Добавьте к заказу вкусный десерт</div>
-            <div class="order-row mb-15 productBlock" style="display: none;">
-                <div class="row">
-                    <div class="col-sm-5" style="max-width: 42%!important;">
-                        <img src="{{$CartDesert->image}}" alt="{{$CartDesert->title}}" class="productBlockImage" >
-                    </div>
-                    <div class="col-sm-7" style="max-width: 57%!important;">
-{{--                        <div style="font-family: Open Sans;font-style: normal;font-weight: bold;font-size: 13px;line-height: 18px;color: #000000;margin-bottom: 15px;">Добавьте к заказу вкусный десерт:</div>--}}
-                        <div class="card__content">
-                            <div class="card__content-header">
-                                <div class="card__content-head productBlockTitle">{{$CartDesert->title}}</div>
-                                <div class="card__content-price productBlockPrice">{{$CartDesert->price}} р.</div>
+            @foreach ($cartDesserts as $dessertIndex)
+                <?
+                    $CartDesert = $Dessert[$dessertIndex];
+                ?>
+                <div class="order-row mb-15 productBlock cartDessertBlock" style="display: none;">
+                    <div class="row">
+                        <div class="col-sm-5" style="max-width: 42%!important;">
+                            <img src="{{$CartDesert->image}}" alt="{{$CartDesert->title}}" class="productBlockImage" >
+                        </div>
+                        <div class="col-sm-7" style="max-width: 57%!important;">
+    {{--                        <div style="font-family: Open Sans;font-style: normal;font-weight: bold;font-size: 13px;line-height: 18px;color: #000000;margin-bottom: 15px;">Добавьте к заказу вкусный десерт:</div>--}}
+                            <div class="card__content">
+                                <div class="card__content-header">
+                                    <div class="card__content-head productBlockTitle">{{$CartDesert->title}}</div>
+                                    <div class="card__content-price productBlockPrice">{{$CartDesert->price}} р.</div>
+                                </div>
+                                <div class="card__content-text_content">{{$CartDesert->text}}</div>
+                                <a href="#" class="btn btn--orange addCartButton" style="position: absolute;bottom: 4px;" onclick="$(this).closest('.productBlock').hide(400);">Добавить в корзину</a>
                             </div>
-                            <div class="card__content-text_content">{{$CartDesert->text}}</div>
-                            <a href="#" class="btn btn--orange addCartButton" style="position: absolute;bottom: 4px;" onclick="$(this).closest('.productBlock').hide(400);">Добавить в корзину</a>
                         </div>
                     </div>
+
+                    <style>
+                        @media only screen and (max-width: 450px){
+                            .card__content-text_content{display: none;}
+                            header.header .order-row .row .card__content .btn.btn--orange {font-size: 12px;}
+                        }
+                    </style>
                 </div>
-
-                <style>
-                    @media only screen and (max-width: 450px){
-                        .card__content-text_content{display: none;}
-                        header.header .order-row .row .card__content .btn.btn--orange {font-size: 12px;}
-                    }
-                </style>
-
-
-            </div>
+            @endforeach
             <!-- /блок десерта -->
             <div class="payment" style="">
                 <div class="order-head deactivate" style="max-width: 40%;float: left;">Оплата:</div>
