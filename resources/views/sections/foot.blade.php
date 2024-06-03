@@ -658,7 +658,7 @@
     });
 
     function checkAdressAndSumm(minDeliverySum = null,error = false){
-		minDeliverySum = 800;
+		minDeliverySum = {!! $Cart->min_delivery_sum !!};
         if(!error){
             var address_input = document.querySelector('.order .address_input');
             if(address_input && address_input.hasAttribute('required') && address_input.value.length<5){
@@ -669,7 +669,7 @@
             // console.log(summCart());
             // console.log(parseInt(minDeliverySum)<parseInt(summCart()));
 
-			minDeliverySum = 900;
+			minDeliverySum = {!! $Cart->min_delivery_sum !!};
             if(parseInt(minDeliverySum)!=NaN && parseInt(minDeliverySum)>parseInt(summCart())){
                 // error = 'Минимальная сумма доставки в выбранную зону составляет '+minDeliverySum+" руб.";
                 let ostatok = minDeliverySum-summCart();
@@ -1195,7 +1195,7 @@ $('window').on('load',function(){$('.order-toggler').click();});
                                 }
                             }
                         });
-						minDeliverySum = 800;
+						minDeliverySum = {!! $Cart->min_delivery_sum !!};
                         if(minDeliverySum && minDeliverySum>0){
                             // console.log('minDeliverySum:'+parseInt(minDeliverySum));
                             // console.log('summCart:'+parseInt(summCart()));

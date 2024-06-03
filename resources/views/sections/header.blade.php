@@ -307,7 +307,7 @@
                         </div>
                     </div>
                     <div class="col-12">
-                        <p style="text-align: right;">Промокод действует при заказе от 1500 руб.</p>
+                        <p style="text-align: right;">Промокод действует при заказе от {!! $Cart->min_promocode_sum !!} руб.</p>
                     </div>
 
                 </div>
