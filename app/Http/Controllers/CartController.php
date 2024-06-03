@@ -14,7 +14,7 @@ class CartController extends Controller
      * Возвращает настройки текущей корзины
      * @return mixed
      */
-    private function getSettings()
+    public static function getSettings()
     {
         $activeRestId = Restaurant::getActiveId();
         $activeCartSettings = Cart::find($activeRestId);
@@ -43,7 +43,7 @@ class CartController extends Controller
     {
         $result = [
             'products' => $this->getProducts(),
-            'settings' => $this->getSettings()
+            'settings' => self::getSettings()
         ];
 
         return $result;

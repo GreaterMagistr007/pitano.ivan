@@ -37,6 +37,7 @@ class MainSettingsController extends Controller
         $modules['Contacts'] = Contacts::get()[0];
         $modules['MainSettings'] = MainSettings::first();
         $modules['MainSettings']["model_show_on_site"] = MainSettings::get__model_show_on_site();
+        $modules['Cart'] = CartController::getSettings();
 
         $LastOrderId = Order::orderby('id', 'desc')->first();
         if($LastOrderId && isset($LastOrderId->id)){
