@@ -137,10 +137,10 @@ class Carts extends Section implements Initializable
                             \AdminFormElement::number('min_delivery_sum', 'Минимальная сумма доставки')
                                 ->setDefaultValue('800'),
                         ], 4)
-                        ->addColumn([
-                            \AdminFormElement::image('active_button_background_image', 'Изображение заднего фона активной кнопки при наведении')
-                                ->setDefaultValue('/img/orange-bg.svg'),
-                        ], 4)
+//                        ->addColumn([
+//                            \AdminFormElement::image('active_button_background_image', 'Изображение заднего фона активной кнопки при наведении')
+//                                ->setDefaultValue('/img/orange-bg.svg'),
+//                        ], 4)
                         ->addColumn([
                             \AdminFormElement::text('active_button_font_color', 'Цвет шрифта активной кнопки')
                                 ->setDefaultValue('#fff')

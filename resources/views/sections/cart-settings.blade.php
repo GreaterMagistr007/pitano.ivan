@@ -57,8 +57,13 @@
         background-color: {!! $Cart->active_button_background_color !!};
         border: 1px solid {!! $Cart->active_button_background_color !!};
     }
+    form.order .payment-choose input + label {
+        background-color: {!! $Cart->inactive_button_background_color !!};
+        color: {!! $Cart->inactive_button_font_color !!}
+    }
     form.order .payment-choose input:checked + label {
         background-color: {!! $Cart->active_button_background_color !!};
+        color: {!! $Cart->active_button_font_color !!}
     }
 </style>
 
