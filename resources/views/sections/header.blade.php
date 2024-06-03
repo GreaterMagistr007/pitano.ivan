@@ -76,8 +76,11 @@
             </div>
             <div class="header-cart__wrap">
                 <div class="header-cart">
-                    <img src="img/basket1.svg" alt="alt">
-                    <span class="header-cart__num"></span>
+                    <img src="{!! $Cart->cart_button_inner_image !!}" alt="корзина">
+                    <span class="header-cart__num" style="
+                    background-color: {!! $Cart->cart_button_product_count_badge_background_color !!};
+                    color: {!! $Cart->cart_button_product_count_badge_font_color !!};
+                    "></span>
                 </div>
                 <div class="cart">
                     <div class="cart-wrap">
