@@ -161,6 +161,7 @@
                                 </div>
                             </div>
                             <p style="max-width: 80%;">Салат с печеной свеклой, рукколой, грецким орехом и сыром Горгонзолла.</p>
+                            @include('sections.product-count-block')
                             <!--Для цезаря-->
                             <div class="cesar_cart_block" hidden>
                                 <a class="btn addCartButton" onclick="setCesar('kurica','с курицей','290');">
@@ -1073,8 +1074,20 @@
 
             modal.querySelector('.productBlock').setAttribute('data-id',thisProduct.getAttribute('data-id'));
 
+            // узнаем количество добавляемого товара и покажем его в модалке:
+            let count = 1;
+            let productCount = thisProduct.querySelector('input.productCount');
+            if (productCount && productCount.value) {
+                count = parseInt(productCount.value);
+            }
+            if (count < 1) {
+                count = 1;
+            }
 
-
+            let modalProductCount = modal.querySelector('input.productCount');
+            if (modalProductCount) {
+                modalProductCount.value = count;
+            }
 
             if(isCesar){
                 $(modal.querySelector('.nonCesar')).hide();
