@@ -709,8 +709,21 @@
 
     $('.addCartButton').on('click',function(){
         event.preventDefault();
-        ///метрика
-        addToCart(getNeedleSelectorOfThisElAndParent(this,'.productBlock',7));
+
+        let productBlock = getNeedleSelectorOfThisElAndParent(this,'.productBlock',7);
+        if (!productBlock) {
+            return;
+        }
+
+        let count = 1;
+        let productCount = productBlock.querySelector('input.productCount');
+        if (productCount && productCount.value) {
+            count = parseInt(productCount.value);
+        }
+
+        count = count > 0 ? count : 1;
+
+        addToCart(productBlock, count);
     });
     $( document ).ready(function() {
         repaintCart();
