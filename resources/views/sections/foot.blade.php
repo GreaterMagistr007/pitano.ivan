@@ -716,13 +716,17 @@
             return;
         }
 
-        let count = 1;
-        let productCount = productBlock.querySelector('input.productCount');
-        if (productCount && productCount.value) {
-            count = parseInt(productCount.value);
-        }
+        if (this.hasAttribute('renamed')) {
+            count = 1;
+        } else {
+            let count = 1;
+            let productCount = productBlock.querySelector('input.productCount');
+            if (productCount && productCount.value) {
+                count = parseInt(productCount.value);
+            }
 
-        count = count > 0 ? count : 1;
+            count = count > 0 ? count : 1;
+        }
 
         addToCart(productBlock, count);
     });
