@@ -26,6 +26,7 @@
                                 <div class="card__content-price productBlockPrice">{{$oneSoup->price}} р.</div>
                             </div>
                             <p>{{$oneSoup->text}}</p>
+                            @include('sections.product-count-block')
                             <a href="#" class="btn btn--orange addCartButton">В корзину</a>
                         </div>
                     </div>

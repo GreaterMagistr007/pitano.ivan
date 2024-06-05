@@ -16,6 +16,7 @@
                                     <div class="card__content-price productBlockPrice">{{$onePinza->price}} р.</div>
                                 </div>
                                 <p>{!! $onePinza->text !!}</p>
+                                @include('sections.product-count-block')
                                 <a href="#" class="btn btn--orange addCartButton">Добавить в корзину</a>
                             </div>
                             <div class="card-main__item-image">
@@ -61,6 +62,7 @@
                                     <div class="card__content-price productBlockPrice">{{$onePinza->price}} р.</div>
                                 </div>
                                 <p>{!! $onePinza->text !!}</p>
+                                @include('sections.product-count-block')
                                 <a href="#" class="btn btn--orange addCartButton">Добавить в корзину</a>
                             </div>
                             <div class="card-main__item-image">
@@ -105,6 +107,7 @@
                                     <div class="card__content-price productBlockPrice">{{$onePinza->price}} р.</div>
                                 </div>
                                 <p>{!! $onePinza->text !!}</p>
+                                @include('sections.product-count-block')
                                 <a href="#" class="btn btn--orange addCartButton">Добавить в корзину</a>
                             </div>
                             <div class="card-main__item-image image-230">
@@ -136,6 +139,7 @@
                                     <div class="card__content-head productBlockTitle">{{$onePinza->title}}</div>
                                 </div>
                                 <p>{!! $onePinza->text !!}</p>
+                                @include('sections.product-count-block')
                                 <a href="#" class="btn btn--orange addCartButton">Добавить в корзину</a>
                             </div>
                         </div>

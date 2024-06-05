@@ -26,6 +26,7 @@
                                     <div class="card__content-price productBlockPrice">{{$oneMakaron->price}} р.</div>
                                 </div>
                                 <p>{{$oneMakaron->text}}</p>
+                                @include('sections.product-count-block')
                                 <a href="#" class="btn btn--orange addCartButton">Добавить в корзину</a>
                             </div>
                         </div>

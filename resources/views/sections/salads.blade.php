@@ -30,6 +30,7 @@
                             <div class="card__content-price productBlockPrice"><?if(strlen($isCesar)>0){echo('от ');}?>{{$oneSalat->price}} р.</div>
                         </div>
                         <p>{{$oneSalat->text}}</p>
+                        @include('sections.product-count-block')
                         <a href="#" class="btn btn--orange addCartButton{{$isCesar}}" >Добавить в корзину</a>
                     </div>
                 </div>
