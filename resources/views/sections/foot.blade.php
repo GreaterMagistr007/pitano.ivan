@@ -1020,7 +1020,12 @@
     window.addEventListener('load',function(){
         $('.productBlock .card__image img').on('click',function(){productClick(event.target);});
         $('.productBlock .card__content .card__content-header').on('click',function(){productClick(event.target);});
-        $('.productBlock .card__content p').on('click',function(){productClick(event.target);});
+        $('.productBlock .card__content p').on('click',function(){
+            if (event.target && event.target.classList && event.target.classList.contains('productCount')) {
+                return;
+            }
+            productClick(event.target);
+        });
 
         $('.productBlock .card-main__item-image img').on('click',function(){productClick(event.target);});
         $('.productBlock .card-main__item-content .card__content-header').on('click',function(){productClick(event.target);});
