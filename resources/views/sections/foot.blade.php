@@ -716,6 +716,8 @@
             return;
         }
 
+        let count = 1;
+
         if (this.hasAttribute('renamed')) {
             count = 1;
         } else {
@@ -724,9 +726,9 @@
             if (productCount && productCount.value) {
                 count = parseInt(productCount.value);
             }
-
-            count = count > 0 ? count : 1;
         }
+
+        count = count > 0 ? count : 1;
 
         addToCart(productBlock, count);
     });
@@ -737,16 +739,22 @@
 <script>
     var Cart = {};
 
+    let restaurant = parseInt("{!! \App\Restaurant::getActiveId() !!}");
+    if (restaurant < 1) {
+        restaurant = 1;
+    }
+    let activeCartName = 'Cart_' + restaurant;
+
     loadCart();
 
     function saveCart() {
-        localStorage.setItem('Cart', JSON.stringify(Cart)); //Cart в строку
+        localStorage.setItem(activeCartName, JSON.stringify(Cart)); //Cart в строку
     }
 
     function loadCart() {
         //проверяю есть ли в localStorage запись Cart
-        if (localStorage.getItem('Cart')) {
-            Cart = JSON.parse(localStorage.getItem('Cart'));
+        if (localStorage.getItem(activeCartName)) {
+            Cart = JSON.parse(localStorage.getItem(activeCartName));
         }
     }
 
